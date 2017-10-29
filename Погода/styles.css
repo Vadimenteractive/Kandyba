@@ -2,7 +2,7 @@ body{background: #3399CC;
     margin: 0;
     border: 10px solid #996699;
     box-sizing: border-box;}
-html, body{height: 100%}
+html, body{height: 100%} /*чтобы рамка растягивалась на всю высоту*/
 h1{width: 80%;
     margin: 20px auto;
     padding: 5px;
