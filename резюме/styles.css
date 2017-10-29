@@ -1,0 +1,57 @@
+body {
+    border-radius: 30px;
+}
+main {
+    background: #eacb2b;
+    border: double 10px;
+    border-radius: 25px 25px 0px 0px;
+    width: 470px;
+    margin: 0 auto;
+}
+h1 {
+    text-shadow: 3px 3px 2px rgb(168, 168, 168);
+    text-align: center;
+    */box-shadow: 5px 5px 4px rgba(0,0,0,0.5);
+}
+header div {
+    font-size: larger;
+    margin-left: 20px;
+}
+.a, .c {
+    border: double 5px;
+    border-radius: 10px;
+    background: #dcb30c;
+
+    text-shadow: 4px 4px 12px rgba(150, 150, 150, 0.68);
+    padding: 15px;
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.5);
+    /*margin-left: 15px; почему mein стал шире?*/
+    /*width: 250px;*/
+}
+.b {
+    text-decoration: underline;
+}
+.c{
+    margin-bottom: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+footer {
+    background: #eacb2b;
+    border: double 10px;
+    border-radius: 0px 0px 25px 25px;
+    width: 500px;
+    margin: 0 auto;
+}
+main{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+article:hover{
+    background: grey;
+    border: solid 10px;
+    border-radius: 15px 15px 15px 15px;
+    width: 470px;
+}
+a:visited{
+    color: red;
+}
