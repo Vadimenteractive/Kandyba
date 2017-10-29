@@ -6,12 +6,14 @@ form {
     width: 450px;
     margin:  auto;
 }
+html, body{margin: 0;}
 p {
     font-size: 45px;
     margin: 0px auto;
     text-align: center;
     background-color: #decfbb;
 }
+
 
 [class] *{
     height: 20px;
