@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Open+Sans:400,600,700,800i&subset=cyrillic');
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/open_sans-webfont.woff2') format('woff2'),
+    url('fonts/open_sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-size: 28px;
+    font-family: 'Indie Flower', Georgia, cursive;
+}
+p:first-child {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+p:last-of-type {
+    font-family: 'Open Sans', Areal, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+div {
+    font-family: 'open_sansregular', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+    color: purple;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-decoration: overline underline line-through;
+}

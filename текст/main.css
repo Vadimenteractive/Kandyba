@@ -3,7 +3,7 @@ main{width: 1000px;
     padding: 0;
     margin: 180px auto;}
 h2{
-    font-size: 40px;
+    font-size: 42px;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
 }
@@ -11,5 +11,31 @@ p{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     margin: 25px 0;
-
+    line-height: 1.6;
+    font-size: 18px;
 }
+main>p:last-of-type{
+    font-style: italic;
+    font-size: 20px;
+    line-height: 2;
+}
+main>p:first-of-type:first-letter{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    display: block;
+    font-size: 80px;
+    float: left;
+    line-height: 100%;
+    padding-right: 20px;
+}
+span{
+    white-space: pre;
+    font-size: 40px;}
+input{border: solid 2px #e9c5a2;
+    color: #e9c5a2;
+    background: white;
+    width: 150px;
+    height: 50px;
+    letter-spacing: 4px;
+}
+input:hover{cursor: pointer}
