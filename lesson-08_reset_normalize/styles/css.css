@@ -1,0 +1,29 @@
+body {
+    /*margin: 10px;*/
+    background: #464f54;
+    padding-top: 100px;
+}
+/*div {*/
+    /*margin-bottom: 100px;*/
+/*}*/
+main {
+    width: 80%;
+    margin: 0 auto;
+    background: #ffffff;
+}
+main:before {
+    content: '';
+    display: inline-block;
+}
+.black_block {
+    height: 100px;
+    background: #181818;
+    margin: -50px 0 0 40px;
+    width: 100%;
+}
+.yellow_block {
+    height: 30px;
+    background: #f9be2c;
+    margin: 0 0 0 50px;
+    width: calc(100% - 10px);
+}

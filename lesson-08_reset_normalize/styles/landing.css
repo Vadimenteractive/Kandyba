@@ -1,0 +1,23 @@
+section {
+    text-align: center;
+}
+.main_section {
+    background: darkblue;
+    min-height: 100vh;
+}
+.section_inner {
+    max-width: 932px;
+    margin: 0 auto;
+}
+.logo{
+    display: block;
+    width: 94px;
+    height: 94px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.main_section:before{
+    content: "";
+    display: inline-block;
+}
