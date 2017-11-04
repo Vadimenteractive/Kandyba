@@ -1,3 +1,21 @@
+@font-face {
+    font-family: "SegoeUIRegular";
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+    url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SegoeUIBold";
+    src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+    src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+    url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 section {
     text-align: center;
 }
@@ -15,28 +33,49 @@ section {
 }
 .logo{
     display: block;
-    width: 160px;
-    height: 160px;
-    background: #ffffff;
-    border-radius: 50%;
-    margin: 78px auto;
+    margin: 64px auto;
 }
-p{
-    color: white;
-}
-section p:first-of-type {
+section.main_section p:first-of-type {
     font-weight: bold;
     font-family: 'Segoe UI', sans-serif;
-    margin: 199px 0 0 0;
+    margin: 155px 0 0 0;
     text-transform: uppercase;
-    font-size: 94px;
-    letter-spacing: 1px;
+    font-size: 80px;
+    color: white;
 }
-section p:last-of-type {
+section.main_section p:last-of-type {
     font-weight: 400;
     font-family: 'Segoe UI', sans-serif;
-    margin: 53px auto;
-    font-size: 22px;
+    margin: 47px auto;
+    font-size: 18px;
     width: 550px;
     line-height: 1.6;
+    color: white;
+}
+.next{
+    display: block;
+   margin: 178px auto 0;}
+section.section-2{
+    background: url("../img/back.png");
+}
+section.section-2:before{
+    content: "";
+    display: block;
+}
+section.section-2 p:first-of-type{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 55px 0 0 0;
+    font-size: 30px;
+}
+section.section-2 p:last-of-type{
+    font-family: 'Segoe UI', sans-serif;
+    margin: 155px 0 0 0;
+    font-size: 30px;
+}
+section.section-2 h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 80px;
+    margin: 255px auto;
 }
