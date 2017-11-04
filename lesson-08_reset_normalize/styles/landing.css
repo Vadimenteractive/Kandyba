@@ -5,19 +5,38 @@ section {
     background: darkblue;
     min-height: 100vh;
 }
+.main_section:before{
+    content: "";
+    display: inline-block;
+}
 .section_inner {
     max-width: 932px;
     margin: 0 auto;
 }
 .logo{
     display: block;
-    width: 94px;
-    height: 94px;
+    width: 160px;
+    height: 160px;
     background: #ffffff;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 78px auto;
 }
-.main_section:before{
-    content: "";
-    display: inline-block;
+p{
+    color: white;
+}
+section p:first-of-type {
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 199px 0 0 0;
+    text-transform: uppercase;
+    font-size: 94px;
+    letter-spacing: 1px;
+}
+section p:last-of-type {
+    font-weight: 400;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 53px auto;
+    font-size: 22px;
+    width: 550px;
+    line-height: 1.6;
 }
