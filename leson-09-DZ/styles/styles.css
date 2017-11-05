@@ -6,26 +6,35 @@ body{
     content: '';
     display: inline-block;
     }
-section {
-    text-align: center;
-}
 .section1{
     height: 48px;
-    width: 1120px;
+    width: 85%;
+    text-align: left;
+    margin: 22px auto;
 }
 .section1 *{margin: 0;
-    padding: 0;}
+    padding: 0;
+    }
 h2{
     display: inline-block;
-    font:900 48px "Roboto", sans-serif;
+    font:700 48px Roboto, sans-serif;
     margin: 0 calc(1120 -21);
 }
 .su1{
     display: inline-block;
+    margin-left: calc(100% - 288px - 355px);
+    margin-bottom: 3px;
+    vertical-align: super;
 }
-.su1>li{
+.a{
     display: inline-block;
     margin-left: 0;
     list-style-type: none;
     font:400 18px "Roboto", sans-serif;
+    width: 150px;
+}
+.b{
+    display: inline-block;
+    width: 17px;
+    margin-left: 30px;
 }
