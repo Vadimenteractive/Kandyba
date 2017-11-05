@@ -44,19 +44,16 @@ section.main_section p:first-of-type {
     color: white;
 }
 section.main_section p:last-of-type {
-    font-weight: 400;
-    font-family: 'Segoe UI', sans-serif;
+    font:400 18px/1.6 "SegoeUIRegular", sans-serif;
     margin: 47px auto;
-    font-size: 18px;
     width: 550px;
-    line-height: 1.6;
     color: white;
 }
 .next{
     display: block;
    margin: 178px auto 0;}
 section.section-2{
-    background: url("../img/back.png");
+    background: url("../img/bg.jpg");
 }
 section.section-2:before{
     content: "";
