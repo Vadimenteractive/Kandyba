@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600i,900');
 body{
-    background: #f5f5f5;
+    background: #f5f5f5;}
+main{
+    background: url("../img/headphone.png") 475px 0 no-repeat;
+    margin: 0;
 }
-.section1:before {
+main:before {
     content: '';
     display: inline-block;
     }
 .section1{
-    height: 48px;
     width: 85%;
     text-align: left;
     margin: 22px auto;
@@ -38,3 +40,42 @@ h2{
     width: 17px;
     margin-left: 30px;
 }
+.section12 *{
+    margin: 0;
+    text-align: right;
+}
+.section12{
+    width: 85%;
+    text-align: left;
+    margin: 92px auto;
+}
+.c{width: 610px;}
+h1{text-transform: uppercase;
+    font: 900 150px/1 "Raleway", sans-serif;
+    letter-spacing: 4px;
+}
+p.p1{    font: 100 24px/1 "Roboto", sans-serif;
+    margin-top: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;}
+.d{
+    display: inline-block;
+    margin-top: 13px;
+    font: 800 24px "Roboto", sans-serif;
+    color: #e10011;
+}
+.section12>img{
+    display: block;
+    margin: 84px auto;}
+.section2{
+    width: 1200px;
+    background: white;
+    margin: 15px auto;
+    text-align: center;
+}
+h3{
+    font: 900 48px/1 "Raleway", sans-serif;
+    margin: 14px auto;}
+.p2{width: 555px;
+    font: 400 18px/1 "Raleway", sans-serif;
+    margin: 14px auto;}
