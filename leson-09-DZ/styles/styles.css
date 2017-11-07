@@ -20,7 +20,7 @@ main:before {
 h2{
     display: inline-block;
     font:700 48px Roboto, sans-serif;
-    margin: 0 calc(1120 -21);
+    margin: 0 calc(1120px -21px);
 }
 .su1{
     display: inline-block;
@@ -90,7 +90,9 @@ h3{
     margin: 15px;
     font-size: 0;
 }
-#hover:hover{background: url("../img/hover.jpg")}
+#h2{display: none;
+position: absolute;}
+#hover:hover > #h2{display: inline-block}
 .section3{
     text-align: center;
 }
