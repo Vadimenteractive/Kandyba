@@ -90,9 +90,13 @@ h3{
     margin: 15px;
     font-size: 0;
 }
-#h2{display: none;
-position: absolute;}
-#hover:hover > #h2{display: inline-block}
+.hover{position: relative}
+.h2{display: none;
+position: absolute;
+    left: 0;
+    top: 0;
+   }
+.hover:hover  #h2{display: inline-block;}
 .section3{
     text-align: center;
 }
