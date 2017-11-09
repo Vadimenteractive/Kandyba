@@ -1,0 +1,49 @@
+body{
+    background: cadetblue;}
+.board{
+    position: relative ;
+    width: 80vh;
+    height: 80vh;
+    background: #dcb30c;
+    top: 10vh;
+   left: calc(50vw - 40vh);
+    border: 15px double #8d6e0a;
+    }
+.row{height: 25%;
+    background: goldenrod;
+    font-size: 0;
+}
+.cell{
+    position: relative;
+    display: inline-block;
+    width: 12.5%;
+    height: 50%;
+    background: #3c3c3c;
+}
+.cell:nth-child(2n){
+    top: 50%;
+}
+.cell:before{
+    content: '';
+    display: block;
+    position: absolute;
+    right:0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    background: #d40000;
+    border-radius: 50%;
+    border: 5px double white;
+    z-index: 1;
+}
+.row:nth-child(3) > .cell:nth-child(2n+1):before,
+.row:nth-child(2) > .cell:nth-child(2n):before{
+display: none;
+}
+.row:nth-child(4) > .cell:before,
+.row:nth-child(3) > .cell:nth-child(2n):before{
+    background: #0000e3;
+}
