@@ -1,0 +1,80 @@
+body{
+    margin: 0;}
+.relative-block{
+    width: 80%;
+    margin: 0 auto;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    margin:10px;
+}
+.item.fll{
+    float: left;
+background: darkblue;
+}
+.item.flr{
+    float: right;
+    background: darkred;
+}
+.item.fll.fn{
+    float: none;
+}
+.item:first-child{
+    float: left;
+    background: #0d330b;
+}
+.item:nth-child(2){
+    float: right;
+    background: #ea9b64;
+}
+.dib{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #999999;
+    margin: 10px;
+}
+.cleaner{
+    display: block;
+    clear: both;
+}
+section:before,
+section:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.el-fl{
+    width: 100px;
+    height: 100px;
+    float: left;
+    font-size: 20px;
+    background: yellow;
+    margin: 10px;
+}
+.myfoto{
+    width: 300px;
+    height: 300px;
+    background: #333333;
+    float: left;
+    margin: 10px;
+}
+.board{
+    width: 600px;
+    height: 600px;
+}
+.col{
+    float: left;
+    width: 12.5%;
+    height: 100%;
+}
+.cel{
+    height:12.5%;
+    background: #333;
+    margin-top: 100%;
+}
+.col:nth-child(even) .cel{
+    margin-top: 0;
+    margin-bottom: 100%;
+}
