@@ -1,0 +1,43 @@
+body{
+    background: gainsboro;
+}
+.board{
+    background: tan;
+    width: 80vh;
+    height: 80vh;
+    margin: auto;
+    border: solid 3px black;
+    margin-top: 10vh;
+}
+.row{height: 12.5%}
+.cel{
+    float: left;
+    height: 100%;
+    width: 12.5%;
+    background: #9a710b;
+    margin-left: 12.5%;
+    }
+.row:nth-child(2n) .cel{
+    float: right;
+    margin: 0 12.5% 0 0;
+}
+.cel:before{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 75%;
+    background: #d4693e;
+    border-radius: 50%;
+    border: 2px solid #c1c1c1;
+    margin-top: calc(12.5% - 2px);
+}
+.row:nth-child(4) .cel:before,
+.row:nth-child(5) .cel:before{
+    display: none;
+}
+.row:nth-child(6) .cel:before,
+.row:nth-child(7) .cel:before,
+.row:nth-child(8) .cel:before{
+    background: #623dd4;
+}
