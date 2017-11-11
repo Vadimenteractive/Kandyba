@@ -1,0 +1,17 @@
+.ba-square-box{
+    position: relative;
+    max-width: 70vh;
+    }
+.ba-square-content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: red;
+}
+.ba-square-box:before{
+    content: '';
+    display: block;
+    padding-top: 100%;
+    }

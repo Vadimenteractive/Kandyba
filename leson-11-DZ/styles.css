@@ -1,6 +1,27 @@
 body{
     background: gainsboro;
 }
+/*.board{
+    position: relative;
+    background: tan;
+    max-width: 80vh;
+    margin: auto;
+    border: solid 3px black;
+    margin-top: 10vh;
+}
+.b1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: red;
+}
+.b1:before{
+    content: '';
+    display: block;
+    padding-top: 100%;
+}*/
 .board{
     background: tan;
     width: 80vh;
