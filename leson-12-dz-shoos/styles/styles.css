@@ -1,0 +1,72 @@
+body{
+    background: url("../img/bg.jpg");
+    background-size: cover;
+}
+.bg{
+    background: url("../img/bg.jpg") no-repeat;
+    width: 800px;
+    height: 600px;
+    margin: calc(50vh - 300px) auto;
+}
+.page{
+    position: relative;
+    width: 686px;
+    height: 392px;
+    margin: auto;
+    background: #111a28;
+    top: calc(50% - 196px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 80px 0px rgba(17, 26, 40, 1);
+}
+.page-logo{
+    position: absolute;
+    top: 24px;
+    left: 21px;
+}
+.page-section1{
+    width: 446px;
+    float: left;
+}
+.page-section1__product{
+    margin: 126px 0 0 35px;
+}
+.page-section1__color{
+    margin: 65px 0 0 180px;
+}
+.page-section1__color > *{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle; /*Как сделать?*/
+    }
+.page-section1__color > *:hover{
+    width: 13px;
+    height: 13px;
+    border: 2px solid #7e838b;
+}
+.page-section1__color--item1{
+    background: #1f273f;
+    border: 1px solid white;
+}
+.page-section1__color--item2{
+    background: white;
+       }
+.page-section1__color--item3{
+     background: #ed3333;
+      }
+.page-section1__color--item4{
+    background: #29e3ea;
+    }
+.page-section2{
+    width: 220px;
+    float: right;}
+.page-section2__h1{
+    font-size:24px;
+    color: #e1e1e1;
+}
+.page-section2__p{
+    font-size: 14px;
+    color: #e1e1e1;
+}
