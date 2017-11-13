@@ -29,8 +29,8 @@ body{
     position: absolute;
     top: 24px;
     left: 21px;
-    cursor: pointer;
-}
+    }
+.page-logo > *{cursor: pointer;}
 .page-section1{
     width: 446px;
     float: left;
@@ -49,8 +49,7 @@ body{
     border-radius: 50%;
     margin: 0 3px 0;
     vertical-align: middle;
-    user-select: none;/*Как сделать?*/
-    cursor: pointer;
+    cursor: pointer;      /*Как сделать?*/
 }
 .page-section1__color > *:hover{
     width: 13px;
