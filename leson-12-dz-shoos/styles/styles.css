@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "MuseoSansCyrl";
+    src: url("../font/MuseoSansCyrl.otf");
+}
+*{font:100 14px "MuseoSansCyrl", sans-serif;
+    user-select: none;
+    cursor: default;}
 body{
     background: url("../img/bg.jpg");
     background-size: cover;
@@ -22,6 +29,7 @@ body{
     position: absolute;
     top: 24px;
     left: 21px;
+    cursor: pointer;
 }
 .page-section1{
     width: 446px;
@@ -32,19 +40,23 @@ body{
 }
 .page-section1__color{
     margin: 65px 0 0 180px;
-}
+    user-select: none;
+   }
 .page-section1__color > *{
     display: inline-block;
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    margin-right: 5px;
-    vertical-align: middle; /*Как сделать?*/
-    }
+    margin: 0 3px 0;
+    vertical-align: middle;
+    user-select: none;/*Как сделать?*/
+    cursor: pointer;
+}
 .page-section1__color > *:hover{
     width: 13px;
     height: 13px;
     border: 2px solid #7e838b;
+    margin: 0;
 }
 .page-section1__color--item1{
     background: #1f273f;
@@ -52,21 +64,68 @@ body{
 }
 .page-section1__color--item2{
     background: white;
+    border: 1px solid #111a28;
        }
 .page-section1__color--item3{
      background: #ed3333;
+    border: 1px solid #111a28;
       }
 .page-section1__color--item4{
     background: #29e3ea;
+    border: 1px solid #111a28;
     }
 .page-section2{
-    width: 220px;
+    width: 240px;
     float: right;}
 .page-section2__h1{
     font-size:24px;
     color: #e1e1e1;
+    margin: 72px 0 6px;
 }
 .page-section2__p{
     font-size: 14px;
     color: #e1e1e1;
+}
+.page-section2-rating{padding-left: 0;
+    margin: 22px 0;
+    font-size: 0;}
+.page-section2-rating > *{
+    text-decoration: none;
+    margin-left: 0;
+    display: inline-block;}
+.page-section2-rating__star1,
+.page-section2-rating__star2,
+.page-section2-rating__star3,
+.page-section2-rating__star4,
+.page-section2-rating__star5{
+    display: inline-block;
+    background: url("../img/star_pasiv.png");
+    width: 12px;
+    height: 12px;
+}
+/*.page-section2-rating__star5:active .page-section2-rating__star5{*/
+    /*background: url("../img/star_active.png");*/
+/*}*/
+a:active{background: url("../img/star_active.png");}
+.page-section2-select > *{background: #111a28;
+    color: #797d84;
+    border: 1px solid #797d84;
+cursor: pointer;}
+.page-section2-select_size{
+    width: 68px;
+    height: 32px;
+    padding-left: 7px;
+}
+.page-section2-select_qty{
+    width: 67px;
+    height: 32px;
+    padding-left: 7px;
+}
+.page-section2-select-submit{
+    width: 182px;
+    height: 40px;
+    margin-top: 30px;
+}
+.page-section2-select-submit:hover{
+    background: #202835;
 }
