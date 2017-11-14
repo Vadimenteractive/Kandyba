@@ -9,6 +9,12 @@ body{
    left: calc(50vw - 40vh);
     border: 15px double #8d6e0a;
     }
+.board:before{
+    position: absolute;
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
 .row{height: 25%;
     background: goldenrod;
     font-size: 0;
