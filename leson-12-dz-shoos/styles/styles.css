@@ -93,15 +93,14 @@ body{
     margin-left: 0;
     display: inline-block;
     cursor: pointer;}
-.page-section2-rating__star1--active,
-.page-section2-rating__star2--active,
-.page-section2-rating__star3--active,
-.page-section2-rating__star4--active,
-.page-section2-rating__star5--active{
+li{
     display: inline-block;
-    background: url("../img/star_active.png");
+    background: url("../img/star_pasiv.png");
     width: 12px;
     height: 12px;
+}
+ul:hover > li{
+    background: url("../img/star_active.png");
 }
 li:hover  ~ li{
     background: url("../img/star_pasiv.png");
