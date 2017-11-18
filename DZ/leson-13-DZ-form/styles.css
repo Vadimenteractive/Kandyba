@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background: url("img/bg.jpg");
+    background-size: cover;
+    padding: ;
+}
+main{
+    padding:;
+    background: #;
+    height:;
+    width:;
+}
+h1{
+    font: ;
+    color: #7a7b7f;
+}
+p{
+    font: ;
+    color: ;
+}
+input{
+    background: #f0f0f0;
+    font:;
+    color: #7a7b7f;
+    border: 0;
+}
+#i1,
+#i2{
+
+}
+#i3{
+
+}
+#i4{
+
+}
+#i5 {
+    font: ;
+    color: white;
+    background: #ea355a;
+    border-radius: 5px;
+    box-shadow: 0 10px 0 0 #bd1962;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #e12a6c;
+}
+

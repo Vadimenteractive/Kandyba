@@ -105,7 +105,7 @@ ul:hover > li{
 li:hover  ~ li{
     background: url("../img/star_pasiv.png");
 }
-a:active{background: url("../img/star_active.png");}
+a:visited{background: url("../img/star_active.png");}
 .page-section2-select > *{background: #111a28;
     color: #797d84;
     border: 1px solid #797d84;
