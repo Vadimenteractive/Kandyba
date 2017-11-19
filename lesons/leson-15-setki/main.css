@@ -59,7 +59,7 @@ label:before{
     height: 100%;
     width: 30px;
     background: darkslategrey;}
-label:after{
+label:before{
     border: 6px solid transparent;
     border-left-color: darkslategrey;
     left: 30px;
