@@ -1,0 +1,24 @@
+html{height: 100%}
+html{
+    min-height:100%;
+    margin: 0;}
+section{
+    margin: 50px;
+    padding: 50px;
+    border: 2px solid black;
+}
+div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+header {
+    padding: 50px;
+    background: gray;
+}
+main{
+    background: orange;
+}
