@@ -2,61 +2,61 @@ body{
     margin: 0;
     font-size: 0;
     width: 1280px;}
-[class^='cel']{float: left;
+[class^='col']{float: left;
    }
-[class^='column']:before,
-[class^='column']:after {
+[class^='row']:before,
+[class^='row']:after {
     content: '';
     display: block;
     clear: both;
 }
-.cel11{
+.col11{
     background: #aedebe;
     width: 600px;
     height: 150px;
 }
-.cel12{
+.col12{
     background: #68c4b7;
     width: 600px;
     height: 150px;}
-.cel121{
+.col121{
     width: 600px;
     height: 320px;
     background: #f96889;
 }
-[class^='cel121-']{
+[class^='col121-']{
     width: 200px;
     height: 165px;
     background: #8994ee;
 }
-[class^='cel122-']{
+[class^='col122-']{
     width: 300px;
     height: 150px;
     background: #fdc469;
 }
-[class^='cel13']{
+[class^='col13']{
     background: #588bc6;
 }
-.cel31, .cel32{
+.col31, .col32{
     width: 400px;
     height: 185px;
 }
-.cel33, .cel34{
+.col33, .col34{
     width: 200px;
     height: 195px;
 }
-[class^='cel14']{
+[class^='col4']{
     background: #6652ac;
 }
-.cel41{
+.col41{
     width: 200px;
     height: 145px;
 }
-.cel42{
+.col42{
     width: 600px;
     height: 135px;
 }
-.cel43{
+.col43{
     width: 400px;
     height: 135px;
 }

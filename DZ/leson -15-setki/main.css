@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    font-size: 0;
+    padding: 5px;
+   }
+[class^='col']{
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.col-2{
+    width: 16.67%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-6{
+    width: 50%;
+}
+.c11{
+    background: #aedebe;
+    height: 150px;
+}
+.c12{
+    background: #68c4b7;
+    height: 150px;}
