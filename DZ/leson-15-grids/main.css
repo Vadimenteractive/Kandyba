@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    font-size: 0;
+    width: 1280px;}
+[class^='col']{float: left;
+   }
+[class^='row']:before,
+[class^='row']:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.col11{
+    background: #aedebe;
+    width: 600px;
+    height: 150px;
+}
+.col12{
+    background: #68c4b7;
+    width: 600px;
+    height: 150px;}
+.col121{
+    width: 600px;
+    height: 320px;
+    background: #f96889;
+}
+[class^='col121-']{
+    width: 200px;
+    height: 165px;
+    background: #8994ee;
+}
+[class^='col122-']{
+    width: 300px;
+    height: 150px;
+    background: #fdc469;
+}
+[class^='col13']{
+    background: #588bc6;
+}
+.col31, .col32{
+    width: 400px;
+    height: 185px;
+}
+.col33, .col34{
+    width: 200px;
+    height: 195px;
+}
+[class^='col4']{
+    background: #6652ac;
+}
+.col41{
+    width: 200px;
+    height: 145px;
+}
+.col42{
+    width: 600px;
+    height: 135px;
+}
+.col43{
+    width: 400px;
+    height: 135px;
+}

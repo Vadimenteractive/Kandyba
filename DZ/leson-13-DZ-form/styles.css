@@ -19,6 +19,9 @@ body{
     background: rebeccapurple url("img/bg.jpg");
     background-size: cover;
     padding: calc(50vh - 235px) 0 0 calc(50vw - 230px) ;
+    min-height: 100%;
+}
+html{min-height: 100%;
 }
 main{
     box-sizing: border-box;
