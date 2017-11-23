@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'misobold';
+    src: url('fonts/miso-bold-webfont.woff2') format('woff2'),
+    url('fonts/miso-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    padding-top: calc(50vh - 300px);
+    background: black;
+}
+main{
+    margin: 0 auto;
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background: #fdde7e;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.row{
+    width: 360px;
+    height: 442px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 17px 0;
+}
+.row1{
+    height: 503px;
+}
+.mony{
+    font-family: 'misobold', sans-aerif;
+    font-size: 70px;
+    color: #02995b;
+}
+.img{
+    width: 135px;
+    height: 134px;
+}
+.img1{
+    background: url("img/Cup-1.png");
+}
+.img2{
+    background: url("img/Cup-2.png");
+}
+.img3{
+    background: url("img/Cup-3.png");
+}
+.meyal{
+    font-size: 55px;
+    font-family: 'misobold', sans-aerif;
+}
+.akcy{
+    width: 160px;
+    text-align: center;
+    font-size: 23px;
+}
