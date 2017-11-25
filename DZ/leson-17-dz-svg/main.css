@@ -1,27 +1,150 @@
 @font-face {
     font-family: "LatoRegular";
-    src: url("../fonts/LatoRegular/LatoRegular.eot");
-    src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
-    url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+    src: url("fonts/LatoRegular/LatoRegular.eot");
+    src: url("fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LatoRegular/LatoRegular.woff") format("woff"),
+    url("fonts/LatoRegular/LatoRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: "LatoBold";
-    src: url("../fonts/LatoBold/LatoBold.eot");
-    src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoBold/LatoBold.woff") format("woff"),
-    url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+    src: url("fonts/LatoBold/LatoBold.eot");
+    src: url("fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LatoBold/LatoBold.woff") format("woff"),
+    url("fonts/LatoBold/LatoBold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: "LatoLight";
-    src: url("../fonts/LatoLight/LatoLight.eot");
-    src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoLight/LatoLight.woff") format("woff"),
-    url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+    src: url("fonts/LatoLight/LatoLight.eot");
+    src: url("fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LatoLight/LatoLight.woff") format("woff"),
+    url("fonts/LatoLight/LatoLight.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
+}
+body{
+    margin: 0;
+}
+header{
+    background: url("img/hero-bg.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.h{width: 593px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+.h1{
+    font: 54px "LatoBold", sans-serif;
+    letter-spacing: 9px;
+    }
+.h2{
+    font: 15px/1.9 "LatoRegular", sans-serif;
+    letter-spacing: 1px;
+    }
+.h1, .h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.scroll{
+    display: block;
+    background: url("img/scroll.svg") no-repeat;
+    width: 23px;
+    height: 37px;
+}
+.a1{display: flex;
+    height: 630px;
+    }
+.a2, .b2, .c2{margin: auto;
+    width: 903px;
+    height: 310px;
+    box-sizing: border-box;
+    border: solid 2px black;
+    text-align: center;
+    padding: 53px 163px 0;
+    position: relative;
+    }
+.a3, .b3, .c3{
+    position: absolute;
+    left: 240px;
+    top: -50px;
+    display: block;
+    width: 420px;
+    background: white;
+    font: 34px "LatoBold", sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.a4, .a5, .b4{
+    font: 16px/1.5 "LatoLight", sans-serif;
+    }
+.a4{
+    margin-bottom: 47px;
+}
+.b1{
+    display: flex;
+    background: url("img/services.jpg") no-repeat center;
+    background-size: cover;
+    height: 488px;
+    margin-bottom: 120px;
+}
+.b2{
+    height:250px;
+    background: none;
+    color: white;
+    border:3px solid white;
+    border-top-color: transparent;
+    padding-top: 53px;
+}
+.b3{
+    background: none;
+    width: 903px;
+    left: -5px;
+    top: -49px;
+    display: inline-block;
+    }
+.b4{
+    line-height: 1.6;
+}
+.b3:before{
+    content: '----------------------------';
+    color: white;
+    letter-spacing: -4px;
+    margin: 0 115px 0 0;
+}
+.b3:after{
+    content: '---------------------------';
+    color: white;
+    letter-spacing: -4px;
+    margin: 0 0 0 115px ;
+}
+.c1{
+    height: 1420px;
+    }
+.c2{
+    height: 1183px;
+    padding-top: 121px;
+}
+h2{
+    font: 20px "LatoBold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+.c5, .c6, .c7{
+    font: 14px/1.8 "LatoLight", sans-serif;
+    margin-bottom: 105px;
+}
+.c4{
+    margin-bottom: 16px;
 }
