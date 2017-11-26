@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+}
+
+.content-inner {
+    max-width: 1170px; /*чтобы небыло полосы прокрутки при меньшем экране*/
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+header {
+    height: 56px;
+    position: absolute;
+    width: 100%;
+}
+
+header .content-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+    float: left; /*убрали пробел между ли*/
+}
+
+ul:after {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-section {
+
+    background: url("../img/img1.jpg") no-repeat right center/cover;
+}
+
+.main-section .section-text {
+    width: 33%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-section > .content-inner {
+    /*min-height: calc(100vh - 56px); !*если текста больше, то он тянется по контенту*!*/
+    min-height: 100vh;
+    display: flex;
+    padding-top: 56px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+    position: relative;
+}
+#scroll{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%); /*сдвиг элемента относительно своего размера*/
+}
+.button {
+    text-transform: uppercase;
+    color: white;
+    background: #ff6033;
+    min-width: 200px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
+}
+.button:hover{
+    background: orangered;
+    box-shadow: none;
+}
+#section-about{
+    background: #00b9b9;
+}
+#section-about .content-inner{
+    min-height: 500px;
+}
