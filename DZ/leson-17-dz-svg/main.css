@@ -148,3 +148,13 @@ h2{
 .c4{
     margin-bottom: 16px;
 }
+.d1{display: flex;
+    flex-wrap: wrap;
+    width: 1920px;
+    margin: 30px auto;
+}
+.d{
+    display: inline-block;}
+.d2{
+
+}
