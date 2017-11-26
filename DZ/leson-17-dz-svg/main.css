@@ -73,7 +73,7 @@ header{
     padding: 53px 163px 0;
     position: relative;
     }
-.a3, .b3, .c3{
+.a3,  .c3{
     position: absolute;
     left: 240px;
     top: -50px;
@@ -101,31 +101,43 @@ header{
     height:250px;
     background: none;
     color: white;
-    border:3px solid white;
+    border-color: white;
     border-top-color: transparent;
     padding-top: 53px;
+
 }
 .b3{
     background: none;
-    width: 903px;
-    left: -5px;
-    top: -49px;
-    display: inline-block;
-    }
+    width: 40%;
+    text-align: center;
+    left: 30%;
+    top: 0;
+    margin: 0;
+    position: absolute;
+    transform: translateY(-50%);
+}
 .b4{
     line-height: 1.6;
 }
-.b3:before{
-    content: '----------------------------';
-    color: white;
-    letter-spacing: -4px;
-    margin: 0 115px 0 0;
+.b2:before{
+    display: block;
+    content: '';
+    height: 2px;
+    width: 30%;
+    background: white;
+    position: absolute;
+    left: -2px;
+    top: -2px;
 }
-.b3:after{
-    content: '---------------------------';
-    color: white;
-    letter-spacing: -4px;
-    margin: 0 0 0 115px ;
+.b2:after{
+    display: block;
+    content: '';
+    height: 2px;
+    width: 30%;
+    background: white;
+    position: absolute;
+    right: -2px;
+    top: -2px;
 }
 .c1{
     height: 1420px;
@@ -147,13 +159,52 @@ h2{
 .c4{
     margin-bottom: 16px;
 }
-.d1{display: flex;
-    flex-wrap: wrap;
-    width: 1920px;
-    margin: 30px auto;
-}
 .d{
-    display: inline-block;}
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.d1{display: flex;
+    align-items: stretch;
+    width: 100vw;
+    max-width: 1920px;
+    margin: 0;
+}
+.d1 > a{
+    flex-shrink: 10;
+    margin: 2px;
+    height: 237px;
+    display: inline-block;
+}
+.d1 > a:hover{opacity: 0.7}
+.d1 :first-child{margin-left: 0}
+.d1 :last-child{margin-right: 0}
 .d2{
-
+    background: url("img/Layer1.jpg") no-repeat center;
+    background-size: cover;
+    flex-basis: 548px;
+}
+.d3{
+    background: url("img/Layer2.jpg") no-repeat center;
+    background-size: cover;
+    flex-basis: 800px;
+}
+.d4{
+    background: url("img/Layer3.jpg") no-repeat center;
+    background-size: cover;
+    flex-basis: 550px;
+}
+.d5{
+    background: url("img/Layer4.jpg") no-repeat center;
+    background-size: cover;
+    flex-basis: 548px;
+}
+.d6{
+    background: url("img/Layer5.jpg") no-repeat center;
+    background-size: cover;
+    flex-basis: 800px;
+}
+.d7{
+    background: url("img/Layer6.jpg") no-repeat center;
+    background-size: cover;
+    flex-basis: 550px;
 }
