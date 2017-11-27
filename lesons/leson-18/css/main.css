@@ -31,25 +31,15 @@ header ul li {
     display: inline-block;
     float: left; /*убрали пробел между ли*/
 }
-
-ul:after {
-    margin: 0;
-    padding: 0;
-}
-
 #logo {
     float: left;
 }
-
 a {
     text-decoration: none;
 }
-
 .main-section {
-
-    background: url("../img/img1.jpg") no-repeat right center/cover;
-}
-
+    background: url("../img/img1.jpg") no-repeat right center/auto;
+    }
 .main-section .section-text {
     width: 33%;
     min-width: 300px;
@@ -57,7 +47,6 @@ a {
     flex-direction: column;
     justify-content: center;
 }
-
 .main-section > .content-inner {
     /*min-height: calc(100vh - 56px); !*если текста больше, то он тянется по контенту*!*/
     min-height: 100vh;
@@ -89,8 +78,69 @@ a {
     box-shadow: none;
 }
 #section-about{
-    background: #00b9b9;
+    background: #00b9b9 url("../img/img1.png") no-repeat 8% 50%;
 }
 #section-about .content-inner{
-    min-height: 500px;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+#section-about .section-text{
+    min-width: 500px;
+    width: 33%;
+    text-align: center;
+    text-shadow: 0 0 4px #00b9b9;
 }
+h2{
+    font: bold 90px 'Realway', sans-serif;
+    color: white;
+}
+.p-white{
+    font: 300 17px 'Realway', sans-serif;
+    color: white;
+}
+#our-services{
+    background: #70bfff url("../img/img2.png") no-repeat 92% 50%;
+}
+#our-services .content-inner{
+    min-height: 790px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#our-services .section-text{
+    min-width: 400px;
+    width: 33%;
+    }
+#our-services a{
+    min-height: 100px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font: bold 20px 'Realway', sans-serif;
+    text-align: center;
+    color: black;
+    padding-right: 130px;
+    padding-left: 30px;
+    display: flex;
+    box-shadow: 3px 3px 8px 0px rgba(50, 50, 50, 0.55);
+}
+#our-services a:last-child{margin-bottom: 0;}
+#our-services a span{ margin: auto;}
+#our-services a:hover{
+    text-shadow: 4px 4px 2px #70bfff;
+    box-shadow: none;
+}
+.os1{
+    background: white url("../img/icon1.png") no-repeat right 20px center;}
+.os2{
+    background: white url("../img/icon2.png") no-repeat right 20px center;}
+.os3{
+    background: white url("../img/icon3.png") no-repeat right 20px center;}
+.os4{
+    background: white url("../img/icon4.png") no-repeat right 20px center;}
