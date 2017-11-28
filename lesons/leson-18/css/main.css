@@ -92,17 +92,26 @@ a {
 #section-about .section-text{
     min-width: 500px;
     width: 33%;
-    text-align: center;
     text-shadow: 0 0 4px #00b9b9;
 }
 h2{
     font: bold 90px 'Realway', sans-serif;
-    color: white;
+    margin:0;
 }
 .p-white{
     font: 300 17px 'Realway', sans-serif;
+    margin:0;
+}
+#section-about h2{
+    margin-bottom: 40px;
     color: white;
 }
+#section-about .p-white{
+    color: white;
+    margin-bottom: 25px;
+}
+#section-about .p-white:last-child{
+    margin: 0;}
 #our-services{
     background: #70bfff url("../img/img2.png") no-repeat 92% 50%;
 }
@@ -144,3 +153,79 @@ h2{
     background: white url("../img/icon3.png") no-repeat right 20px center;}
 .os4{
     background: white url("../img/icon4.png") no-repeat right 20px center;}
+#gallery{
+    background: #ffe92f;
+}
+#gallery .content-inner{
+    padding-top: 100px;
+}
+#gallery .section-text{
+    min-width: 630px;
+    width: 33%;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+#gallery h2{margin-bottom: 50px}
+.grid{
+    font-size: 0;
+    width: 90vw;
+    height: 76vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    max-height: 985px;
+    }
+[class^='col']{
+    display: inline-block;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-6{
+    width: 50%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-12 {
+    width: 100%;
+}
+[class^='col'] > .row{
+    margin: 0 -15px;
+}
+[class^='col'] .row:first-child{
+    margin: -15px -15px 0;
+}
+[class^='col'] .row:last-child{
+    margin: 0 -15px -15px;
+}
+.grid a{
+    display: block;}
+.c1{
+    background: url("../img/c1.jpg") center no-repeat;
+    background-size: auto;
+    height: 568px;
+}
+.c2{
+    background: url("../img/c2.jpg") center no-repeat;
+    background-size: auto;
+    height: 268px;
+}
+.c3{
+    background: url("../img/c3.jpg") center no-repeat;
+    background-size: auto;
+    height: 268px;
+}
+.c4{
+    background: url("../img/c4.jpg") center no-repeat;
+    background-size: auto;
+    height: 408px;
+}
+.c5{
+    background: url("../img/c5.jpg") center no-repeat;
+    background-size: auto;
+    height: 408px;
+}
+
+
