@@ -38,7 +38,7 @@ a {
     text-decoration: none;
 }
 .main-section {
-    background: url("../img/img1.jpg") no-repeat right center/auto;
+    background: #f9f8fb url("../img/img1.jpg") no-repeat right center/auto;
     }
 .main-section .section-text {
     width: 33%;
@@ -118,10 +118,13 @@ h2{
 #our-services .content-inner{
     min-height: 790px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+#our-services h2{
+    color: white;
 }
 #our-services .section-text{
     min-width: 400px;
@@ -168,12 +171,8 @@ h2{
 #gallery h2{margin-bottom: 50px}
 .grid{
     font-size: 0;
-    width: 90vw;
-    height: 76vw;
-    max-width: 1170px;
     margin: 0 auto;
-    max-height: 985px;
-    }
+        }
 [class^='col']{
     display: inline-block;
     padding: 15px;
