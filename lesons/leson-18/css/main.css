@@ -161,6 +161,7 @@ h2{
 }
 #gallery .content-inner{
     padding-top: 100px;
+    padding-bottom: 120px;
 }
 #gallery .section-text{
     min-width: 630px;
@@ -200,7 +201,11 @@ h2{
     margin: 0 -15px -15px;
 }
 .grid a{
-    display: block;}
+    display: block;
+    /*box-shadow: 2px 2px 9px 0px rgba(50, 50, 50, 0.75);*/}
+.grid{
+    margin-bottom: 35px;
+}
 .c1{
     background: url("../img/c1.jpg") center no-repeat;
     background-size: auto;
@@ -225,6 +230,23 @@ h2{
     background: url("../img/c5.jpg") center no-repeat;
     background-size: auto;
     height: 408px;
+}
+.button{
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font: 300 20px 'Realway', sans-serif;
+    text-align: center;
+    background: #5585a2;
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+    box-shadow: 2px 2px 9px 0px rgba(50, 50, 50, 0.75);
+    }
+.button:hover{
+    box-shadow: none;
+    text-shadow: 4px 4px 2px #70bfff;
+    background: #47708c;
 }
 
 
