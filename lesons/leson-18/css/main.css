@@ -388,8 +388,96 @@ form * {
     height: 55px;
     background: #96b92c;
     font: 300 20px 'Realway', sans-serif;
+    text-transform: uppercase;
     color: white;
     border: none;
     box-shadow: 2px 2px 9px 0 rgba(50, 50, 50, 0.75);
 }
 #submit:hover{box-shadow: none;}
+#blog{
+    background: #b07cf7;
+}
+#blog .content-inner {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+#blog .section-text {
+    min-width: 565px;
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+}
+#blog h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+#blog .p-white {
+    color: white;
+    margin-bottom: 50px;
+}
+.secton-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 1160px;
+    margin: 0 auto 50px;
+}
+.secton-i a:hover{
+    box-shadow: 4px 4px 9px 0px rgba(50, 50, 50, 1);
+}
+.i1, .i2, .i3{
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 310px;
+    width: 370px;
+    box-shadow: 2px 2px 9px 0 rgba(50, 50, 50, 0.75);
+    position: relative;
+}
+.p1{
+    font: 700 20px 'Realway', sans-serif;
+    color: white;
+}
+.p2 {
+    font: 300 13px 'Realway', sans-serif;
+    color: white;
+}
+
+.i1:before, .i2:before, .i3:before{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: rgba(50, 50, 50, 0.7);
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font: 700 25px 'Realway', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.i1{
+    background: url("../img/img40.jpg") no-repeat center;
+}
+.i1:before{
+    content: '20 nov';
+    }
+.i2{
+    background: url("../img/img41.jpg") no-repeat center;
+}
+.i2:before{
+    content: '14 nov';
+    }
+.i3{
+    background: url("../img/img42.jpg") no-repeat center;
+}
+.i3:before{
+    content: '10 nov';
+    }
+#blog .button{
+    background: #f72b3b;
+}
