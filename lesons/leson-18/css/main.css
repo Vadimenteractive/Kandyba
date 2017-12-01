@@ -442,14 +442,18 @@ form * {
     min-width: 690px;
     margin: 0 auto 50px;
 }
-
-.secton-i a:hover {
-    box-shadow: 4px 4px 9px 0px rgba(50, 50, 50, 1);
+.secton-i a:hover{box-shadow: 4px 4px 9px 0px rgba(50, 50, 50, 1);}
+.secton-i a:hover .info{
+    background:linear-gradient(to top, rgba(50, 50, 50, 0.7), transparent);
 }
-
+.info{
+    height: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;}
 .i1, .i2, .i3 {
     box-sizing: border-box;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -457,8 +461,9 @@ form * {
     width: 370px;
     box-shadow: 2px 2px 9px 0 rgba(50, 50, 50, 0.75);
     position: relative;
+    margin-right: 20px;
 }
-
+.i3{margin-right: 0;}
 .p1 {
     font: 700 20px 'Raleway', sans-serif;
     color: white;
