@@ -439,7 +439,7 @@ form * {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-width: 1160px;
+    min-width: 690px;
     margin: 0 auto 50px;
 }
 
@@ -558,6 +558,7 @@ form * {
 #contact form :last-child{
     min-height: 250px;
     line-height: 50px;
+    resize: none;
     }
 #contact form *:focus{
     background: #00c4c4;
