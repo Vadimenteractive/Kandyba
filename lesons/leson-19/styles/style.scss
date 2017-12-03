@@ -1,0 +1,150 @@
+@import "ionicons";
+@import "font-awesome";
+
+$greyColor: #898f8f;
+$orangeColor: #ffcc00;
+@mixin btn($bg, $color: #fff){
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 15px;
+    background: $bg;
+    color: $color;
+  line-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:hover{
+    background: darken($bg, 5%);
+  }
+}
+html, body{
+  min-height: 100%;
+}
+body{
+  margin: 0;}
+.content-inner{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+header{
+  text-transform: uppercase;
+  text-align: center;
+  h3{
+    font-size: 18px;
+    color: $greyColor;
+  }
+  h1{
+    font-size: 60px;
+    color: $orangeColor;
+  }
+}
+.slider{
+  position: relative;
+  &:before{
+    content: '';
+    width: 40%;
+    height: 1px;
+    display: block;
+    background: $orangeColor;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  &:after{
+    font-family: $ionicons-font-family;
+    content: $ionicon-var-bonfire;
+    color: $orangeColor;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #ffffff;
+    top: -10px;
+    left: 50%;
+    margin-left:  -10px;
+    position: absolute;
+  }
+  &-arrows{
+    a{
+      position: absolute;
+      top: 50%;
+      text-decoration: none;
+      color: $orangeColor;
+      &.arrow-left{
+        left: 0;
+      }
+      &.arrow-right{
+        right: 0;
+      }
+    }
+  }
+  .slide{
+    &-img, &-text{
+      width: 50%;
+      float: left;
+      height: 560px;
+    }
+    &-img{
+      border-right: 1px solid $orangeColor;
+      box-sizing: border-box;
+      &-wrapper{
+        width: 418px;
+        height: 418px;
+        border: 1px solid $orangeColor;
+        margin: 35px auto;
+        padding: 13px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        img{
+          border: 1px solid $orangeColor;
+          position: relative;
+          z-index: 1;
+        }
+        &:before, &:after{
+          content: '';
+          display: block;
+          background: #ffffff;
+          position: absolute;
+        }
+        &:before{
+          width: 101%;
+          height: 30%;
+          left: -0.5%;
+          top: 35%;
+        }
+        &:after{
+          height: 101%;
+          width: 30%;
+          top: -0.5%;
+          left: 35%;
+        }
+      }
+    }
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+      height: 560px;
+    }
+  }
+}
+//.button{
+//  height: 30px;
+//  padding: 0 15px;
+//  border-right: 50%;
+//  background: darkblue;
+//  color: #ffffff;
+//  line-height: 30px;
+//  &.green{
+//    background: green;}
+//  &.red{
+//      background: darkred;
+//  }
+//}
+.button{
+  @include btn(darked, #ccc);
+}
