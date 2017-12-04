@@ -1,35 +1,41 @@
 @import "ionicons";
 @import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:400,500|Roboto:900');
+
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Open Sans', sans-serif;*/
-$greyColor: #898f8f;
+$greyColor: #666666;
 $orangeColor: #ffcc00;
-html, body{
+html, body {
   min-height: 100%;
 }
-body{
-  margin: 0;}
-.content-inner{
+
+body {
+  margin: 0;
+}
+
+.content-inner {
   max-width: 1170px;
   margin: 0 auto;
 }
-header{
+
+header {
   text-transform: uppercase;
   text-align: center;
-  h3{
+  h3 {
     font-size: 18px;
     color: $greyColor;
   }
-  h1{
+  h1 {
     font-size: 60px;
     color: $orangeColor;
   }
 }
-.slider{
+
+.slider {
   position: relative;
-  &:before{
+  &:before {
     content: '';
     width: 40%;
     height: 1px;
@@ -40,7 +46,7 @@ header{
     left: 50%;
     transform: translatex(-50%);
   }
-  &:after{
+  &:after {
     font-family: $ionicons-font-family;
     content: $ionicon-var-bonfire;
     color: $orangeColor;
@@ -52,33 +58,33 @@ header{
     background: #ffffff;
     top: -10px;
     left: 50%;
-    margin-left:  -10px;
+    margin-left: -10px;
     position: absolute;
   }
-  &-arrows{
-    a{
+  &-arrows {
+    a {
       position: absolute;
       top: 50%;
       text-decoration: none;
       color: $orangeColor;
-      &.arrow-left{
+      &.arrow-left {
         left: 0;
       }
-      &.arrow-right{
+      &.arrow-right {
         right: 0;
       }
     }
   }
-  .slide{
-    &-img, &-text{
+  .slide {
+    &-img, &-text {
       width: 50%;
       float: left;
       height: 560px;
     }
-    &-img{
+    &-img {
       border-right: 1px solid $orangeColor;
       box-sizing: border-box;
-      &-wrapper{
+      &-wrapper {
         width: 418px;
         height: 418px;
         border: 1px solid $orangeColor;
@@ -88,24 +94,24 @@ header{
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         position: relative;
-        img{
+        img {
           border: 1px solid $orangeColor;
           position: relative;
           z-index: 1;
         }
-        &:before, &:after{
+        &:before, &:after {
           content: '';
           display: block;
           background: #ffffff;
           position: absolute;
         }
-        &:before{
+        &:before {
           width: 101%;
           height: 30%;
           left: -0.5%;
           top: 35%;
         }
-        &:after{
+        &:after {
           height: 101%;
           width: 30%;
           top: -0.5%;
@@ -113,13 +119,13 @@ header{
         }
       }
     }
-    &:after{
+    &:after {
       content: '';
       display: block;
       clear: both;
-     }
-    &-text{
-      &-wrapper{
+    }
+    &-text {
+      &-wrapper {
         width: 418px;
         height: 418px;
         margin: 35px auto;
@@ -128,28 +134,44 @@ header{
         padding-bottom: 5px;
         padding-top: 20px;
         text-align: center;
-        h2{
-          font:900 36px 'Roboto', sans-serif;
+        h2 {
+          font: 900 36px 'Roboto', sans-serif;
         }
-        h4{
-          font:400 24px 'Raleway', sans-serif;
+        h4 {
+          font: 400 24px 'Raleway', sans-serif;
         }
-        .links{
-          a{
+        .links {
+          a {
             text-decoration: none;
-            color: $greyColor;
+            color: lighten($greyColor, 20%);
             display: inline-block;
             width: 30px;
             height: 30px;
             box-sizing: border-box;
-            line-height: 30px;
-            border: solid 2px $greyColor;
+            line-height: 27px;
+            border: solid 2px lighten($greyColor, 20%);
             border-radius: 50%;
             text-align: center;
-            }
+            font-size: 14px;
           }
+        }
+        p {
+          font: 500 14px/1.5 'Raleway', sans-serif;
+        }
+        .profile {
+          text-decoration: none;
+          margin: 0 auto;
+          font: 700 14px 'Open Sans', sans-serif;
+          color: $greyColor;
+          display: block;
+          line-height: 24px;
+          text-align: center;
+          width: 120px;
+          height: 24px;
+          border: solid 1px $orangeColor;
         }
       }
     }
   }
 }
+
