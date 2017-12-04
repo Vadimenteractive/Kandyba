@@ -1,0 +1,23 @@
+@import "ionicons";
+@import "font-awesome";
+
+$greyColor: #898f8f;
+$orangeColor: #ffcc00;
+@mixin btn($bg, $color: #fff){
+  height: 30px;
+  padding: 0 15px;
+  border-radius: 15px;
+  background: $bg;
+  color: $color;
+  line-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:hover{
+    background: darken($bg, 5%);
+  }
+}
+
+.button{
+  @include btn($bg:#ccc);
+}

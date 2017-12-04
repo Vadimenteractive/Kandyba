@@ -1,22 +1,11 @@
 @import "ionicons";
 @import "font-awesome";
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:400,500|Roboto:900');
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
 $greyColor: #898f8f;
 $orangeColor: #ffcc00;
-@mixin btn($bg, $color: #fff){
-    height: 30px;
-    padding: 0 15px;
-    border-radius: 15px;
-    background: $bg;
-    color: $color;
-  line-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  &:hover{
-    background: darken($bg, 5%);
-  }
-}
 html, body{
   min-height: 100%;
 }
@@ -128,23 +117,39 @@ header{
       content: '';
       display: block;
       clear: both;
-      height: 560px;
+     }
+    &-text{
+      &-wrapper{
+        width: 418px;
+        height: 418px;
+        margin: 35px auto;
+        box-sizing: border-box;
+        color: $greyColor;
+        padding-bottom: 5px;
+        padding-top: 20px;
+        text-align: center;
+        h2{
+          font:900 36px 'Roboto', sans-serif;
+        }
+        h4{
+          font:400 24px 'Raleway', sans-serif;
+        }
+        .links{
+          a{
+            text-decoration: none;
+            color: $greyColor;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            box-sizing: border-box;
+            line-height: 30px;
+            border: solid 2px $greyColor;
+            border-radius: 50%;
+            text-align: center;
+            }
+          }
+        }
+      }
     }
   }
-}
-//.button{
-//  height: 30px;
-//  padding: 0 15px;
-//  border-right: 50%;
-//  background: darkblue;
-//  color: #ffffff;
-//  line-height: 30px;
-//  &.green{
-//    background: green;}
-//  &.red{
-//      background: darkred;
-//  }
-//}
-.button{
-  @include btn(darked, #ccc);
 }
