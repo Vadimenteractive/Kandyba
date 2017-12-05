@@ -26,14 +26,14 @@ header {
   padding-top: 5vh;
   margin-bottom: 55px;
   h3 {
-    font:500 18px 'Raleway', sans-serif;
+    font: 500 18px 'Raleway', sans-serif;
     color: $greyColor;
     line-height: 18px;
     margin: 0 0 20px;
   }
   h1 {
     color: $orangeColor;
-    font:900 60px 'Roboto', sans-serif;
+    font: 900 60px 'Roboto', sans-serif;
     line-height: 60px;
     margin: 0;
   }
@@ -41,6 +41,8 @@ header {
 
 .slider {
   position: relative;
+  min-width: 836px;
+  margin-bottom: 40px;
   &:before {
     content: '';
     width: 40%;
@@ -82,6 +84,7 @@ header {
     }
   }
   .slide {
+    padding-top: 50px;
     &-img, &-text {
       width: 50%;
       float: left;
@@ -91,8 +94,8 @@ header {
       border-right: 1px solid $orangeColor;
       box-sizing: border-box;
       &-wrapper {
-        width: 418px;
-        height: 418px;
+        max-width: 418px;
+        max-height: 418px;
         border: 1px solid $orangeColor;
         margin: 35px auto;
         padding: 13px;
@@ -141,14 +144,23 @@ header {
         padding-top: 20px;
         text-align: center;
         h2 {
+          margin: 0;
           font: 900 36px 'Roboto', sans-serif;
           line-height: 36px;
         }
+        .line1 {
+          width: 100px;
+          height: 1px;
+          margin: 35px auto;
+          background: $orangeColor;
+        }
         h4 {
+          margin: 0;
           font: 400 24px 'Raleway', sans-serif;
           line-height: 24px;
         }
         .links {
+          margin: 30px 0;
           a {
             text-decoration: none;
             color: lighten($greyColor, 20%);
@@ -161,7 +173,7 @@ header {
             border-radius: 50%;
             text-align: center;
             font-size: 14px;
-            &:hover{
+            &:hover {
               color: darken($greyColor, 10%);
               border: solid 2px darken($greyColor, 10%);
             }
@@ -169,6 +181,22 @@ header {
         }
         p {
           font: 500 14px/1.5 'Raleway', sans-serif;
+        }
+        .line2 {
+          width: 50px;
+          height: 4px;
+          margin: 20px auto;
+          background: $orangeColor;
+          &:before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 4px;
+            margin: 0 auto;
+            background: $orangeColor;
+            border-left: solid 4px white;
+            border-right: solid 4px white;
+          }
         }
         .profile {
           text-decoration: none;
@@ -183,6 +211,27 @@ header {
           border: solid 1px $orangeColor;
         }
       }
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  .button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: $orangeColor;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background: white;
+      border-color: $orangeColor;
     }
   }
 }
