@@ -75,6 +75,7 @@ header {
       top: 50%;
       text-decoration: none;
       color: $orangeColor;
+      font-size: 40px;
       &.arrow-left {
         left: 0;
       }
@@ -94,19 +95,21 @@ header {
       border-right: 1px solid $orangeColor;
       box-sizing: border-box;
       &-wrapper {
-        max-width: 418px;
-        max-height: 418px;
+        max-width: 420px;
+        max-height: 420px;
         border: 1px solid $orangeColor;
         margin: 35px auto;
-        padding: 13px;
+        padding: 15px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         position: relative;
-        img {
+        width: 73%;
+      img {
           border: 1px solid $orangeColor;
           position: relative;
           z-index: 1;
+          width: 100%;
         }
         &:before, &:after {
           content: '';
