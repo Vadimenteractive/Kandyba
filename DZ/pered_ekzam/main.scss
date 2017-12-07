@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400|Raleway:400,500,700');
+//font-family: 'Lato', sans-serif;
+//font-family: 'Raleway', sans-serif;
+@mixin h2($color: white){
+  font:700 35px 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: $color;
+}
+@mixin line($color: white){
+  width: 86px;
+  height: 2px;
+  background: $color;
+  margin: 45px auto;
+}
+body{
+  margin: 0;
+}
+.row{
+  font-size: 0;
+}
+section{
+  padding-left: 70px;
+  padding-right: 70px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header{
+  padding-top: 55px;
+  background: url("img/HERO.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  header{
+    margin-bottom: 250px;
+    &:before, &:after
+    {
+      display: block;
+      content: '';
+      clear: both;
+    }
+    .logo{
+      float: left;
+    }
+    ul{
+      float: right;
+      margin: 0;
+      li{
+        float: right;
+        display: inline-block;
+        font:500 14px 'Raleway', sans-serif;
+        text-transform: uppercase;
+        margin-left: 45px;
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &-inner{
+    max-width: 600px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    h1{
+      font:700 48px 'Raleway', sans-serif;
+      text-transform: uppercase;
+    }
+    .line{
+      @include line
+    }
+    p{
+      font:300 22px 'Lato', sans-serif;
+    }
+  }
+  .btn1{
+    position: absolute;
+    bottom: 45px;
+    left: calc(50vw - 46px);
+  }
+}
+#our_service{
+  padding-top: 115px;
+  min-height: 735px;
+  .text-inner{
+    text-align: center;
+    .h2{
+      @include h2($color: black)
+    }
+    .line{
+      @include line($color: black)
+    }
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .col{
+      min-width: 222px;
+      max-width: 370px;
+      padding: 0 15px;
+      .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        margin-bottom: 55px;
+      }
+      h3{
+        font:400 24px 'Lato', sans-serif;
+        margin-bottom: 45px;
+      }
+      p{
+        font:400 14px/1.5 'Lato', sans-serif;
+      }
+    }
+  }
+}
+#dolor{
+  background: url("img/img2.jpg") no-repeat center/cover;
+  min-height: 500px;
+  color: white;
+  position: relative;
+  .text-inner{
+    width: 570px;
+    z-index: 2;
+    padding-top: 165px;
+    h2{
+      font:400 45px 'Lato', sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    p{
+      font:100 24px 'Lato', sans-serif;
+      margin-bottom: 70px;
+    }
+    a{
+      font:400 18px 'Lato', sans-serif;
+      color: white;
+    }
+  }
+   img{
+     position: absolute;
+     right: 70px;
+     bottom: 0;
+   }
+}
