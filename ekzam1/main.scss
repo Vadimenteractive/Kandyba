@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400|Raleway:400,500,700');
+//font-family: 'Lato', sans-serif;
+//font-family: 'Raleway', sans-serif;
+@mixin h2($color: white) {
+  font: 700 35px 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: $color;
+  margin: 0;
+}
+
+@mixin line($color: white) {
+  width: 86px;
+  height: 2px;
+  background: $color;
+  margin: 45px auto;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  padding-left: 70px;
+  padding-right: 70px;
+  box-sizing: border-box;
+}
