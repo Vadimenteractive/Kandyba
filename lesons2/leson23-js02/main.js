@@ -61,6 +61,7 @@ console.log(!(age > 18));// ! - логический оператор отриц
 console.log(1 === "1");// строгое сравнение не только true/false
 
 var result;
+var male = 'girl';
 if (age > 18) {
     result = true;
 } else {
@@ -68,3 +69,28 @@ if (age > 18) {
 };
 result = (age > 18) ? true : false;//сокращённый код вышеприведённого
 console.log(result);
+
+if (age > 18) {
+    console.log('Выполнилось первое условие');
+} else if(!age % 2) {//проверка на чётное количество лет
+    console.log('чётное количество лет');
+} else if (male == 'girl') {
+    console.log('мы рады вас видеть');
+} else {
+    console.log('извините, поищите другой сайт');
+}
+
+var k = 10;
+while (k > 0) {
+    console.log(k--);
+}
+
+var kk = 10;
+do {
+    console.log(kk++);
+} while (kk > 10 && kk < 20);
+
+console.log('цикл for');
+for (i = 10; i > 0; i--) {
+    console.log(i);
+}
