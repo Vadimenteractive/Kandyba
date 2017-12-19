@@ -1,49 +1,46 @@
 @import "ionicons";
 @import "font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:400,500|Roboto:900');
 
-/*font-family: 'Roboto', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Open Sans', sans-serif;*/
-$greyColor: #666666;
+$greyColor: #898f8f;
 $orangeColor: #ffcc00;
-html, body {
+@mixin btn($bg, $color: #fff){
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 15px;
+    background: $bg;
+    color: $color;
+  line-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:hover{
+    background: darken($bg, 5%);
+  }
+}
+html, body{
   min-height: 100%;
 }
-
-body {
-  margin: 0;
-}
-
-.content-inner {
+body{
+  margin: 0;}
+.content-inner{
   max-width: 1170px;
   margin: 0 auto;
 }
-
-header {
+header{
   text-transform: uppercase;
   text-align: center;
-  padding-top: 5vh;
-  margin-bottom: 55px;
-  h3 {
-    font: 500 18px 'Raleway', sans-serif;
+  h3{
+    font-size: 18px;
     color: $greyColor;
-    line-height: 18px;
-    margin: 0 0 20px;
   }
-  h1 {
+  h1{
+    font-size: 60px;
     color: $orangeColor;
-    font: 900 60px 'Roboto', sans-serif;
-    line-height: 60px;
-    margin: 0;
   }
 }
-
-.slider {
+.slider{
   position: relative;
-  min-width: 836px;
-  margin-bottom: 40px;
-  &:before {
+  &:before{
     content: '';
     width: 40%;
     height: 1px;
@@ -54,7 +51,7 @@ header {
     left: 50%;
     transform: translatex(-50%);
   }
-  &:after {
+  &:after{
     font-family: $ionicons-font-family;
     content: $ionicon-var-bonfire;
     color: $orangeColor;
@@ -66,64 +63,60 @@ header {
     background: #ffffff;
     top: -10px;
     left: 50%;
-    margin-left: -10px;
+    margin-left:  -10px;
     position: absolute;
   }
-  &-arrows {
-    a {
+  &-arrows{
+    a{
       position: absolute;
       top: 50%;
       text-decoration: none;
       color: $orangeColor;
-      font-size: 40px;
-      &.arrow-left {
+      &.arrow-left{
         left: 0;
       }
-      &.arrow-right {
+      &.arrow-right{
         right: 0;
       }
     }
   }
-  .slide {
-    padding-top: 50px;
-    &-img, &-text {
+  .slide{
+    &-img, &-text{
       width: 50%;
       float: left;
       height: 560px;
     }
-    &-img {
+    &-img{
       border-right: 1px solid $orangeColor;
       box-sizing: border-box;
-      &-wrapper {
-        max-width: 420px;
-        max-height: 420px;
+      &-wrapper{
+        width: 418px;
+        height: 418px;
         border: 1px solid $orangeColor;
         margin: 35px auto;
-        padding: 15px;
+        padding: 13px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         position: relative;
-        width: 73%;
-      img {
+        img{
           border: 1px solid $orangeColor;
           position: relative;
           z-index: 1;
-          width: 100%;
         }
-        &:before, &:after {
+        &:before, &:after{
           content: '';
           display: block;
           background: #ffffff;
           position: absolute;
         }
-        &:before {
+        &:before{
           width: 101%;
           height: 30%;
           left: -0.5%;
           top: 35%;
         }
-        &:after {
+        &:after{
           height: 101%;
           width: 30%;
           top: -0.5%;
@@ -131,110 +124,27 @@ header {
         }
       }
     }
-    &:after {
+    &:after{
       content: '';
       display: block;
       clear: both;
-    }
-    &-text {
-      &-wrapper {
-        width: 418px;
-        height: 418px;
-        margin: 35px auto;
-        box-sizing: border-box;
-        color: $greyColor;
-        padding-bottom: 5px;
-        padding-top: 20px;
-        text-align: center;
-        h2 {
-          margin: 0;
-          font: 900 36px 'Roboto', sans-serif;
-          line-height: 36px;
-        }
-        .line1 {
-          width: 100px;
-          height: 1px;
-          margin: 35px auto;
-          background: $orangeColor;
-        }
-        h4 {
-          margin: 0;
-          font: 400 24px 'Raleway', sans-serif;
-          line-height: 24px;
-        }
-        .links {
-          margin: 30px 0;
-          a {
-            text-decoration: none;
-            color: lighten($greyColor, 20%);
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            box-sizing: border-box;
-            line-height: 27px;
-            border: solid 2px lighten($greyColor, 20%);
-            border-radius: 50%;
-            text-align: center;
-            font-size: 14px;
-            &:hover {
-              color: darken($greyColor, 10%);
-              border: solid 2px darken($greyColor, 10%);
-            }
-          }
-        }
-        p {
-          font: 500 14px/1.5 'Raleway', sans-serif;
-        }
-        .line2 {
-          width: 50px;
-          height: 4px;
-          margin: 20px auto;
-          background: $orangeColor;
-          &:before {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 4px;
-            margin: 0 auto;
-            background: $orangeColor;
-            border-left: solid 4px white;
-            border-right: solid 4px white;
-          }
-        }
-        .profile {
-          text-decoration: none;
-          margin: 0 auto;
-          font: 700 14px 'Open Sans', sans-serif;
-          color: $greyColor;
-          display: block;
-          line-height: 24px;
-          text-align: center;
-          width: 120px;
-          height: 24px;
-          border: solid 1px $orangeColor;
-        }
-      }
+      height: 560px;
     }
   }
 }
-
-.btn {
-  text-align: center;
-  .button {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: $orangeColor;
-    border-radius: 50%;
-    border: 1px solid white;
-    margin-right: 8px;
-    &:last-child {
-      margin-right: 0;
-    }
-    &:hover {
-      background: white;
-      border-color: $orangeColor;
-    }
-  }
+//.button{
+//  height: 30px;
+//  padding: 0 15px;
+//  border-right: 50%;
+//  background: darkblue;
+//  color: #ffffff;
+//  line-height: 30px;
+//  &.green{
+//    background: green;}
+//  &.red{
+//      background: darkred;
+//  }
+//}
+.button{
+  @include btn(lighten, #ccc);
 }
-

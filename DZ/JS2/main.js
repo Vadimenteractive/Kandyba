@@ -16,6 +16,7 @@ function finisfNumberOne(minVar) {
         alert('Значение не может содержать символы. Пожалуйста, ведите минимальное значение');
         finisfNumberOne()
     }  else if (typeof minParseType == "number") {
+        alert (typeof minParseType)
         alert(minParseType + 1)
         finisfNumberTwoo(minVar)
     }
