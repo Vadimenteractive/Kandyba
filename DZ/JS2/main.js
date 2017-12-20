@@ -12,8 +12,8 @@ function finisfNumberOne(minVar) {
     if (!minVar) {
         alert('Строка не может быть пустой. Пожалуйста, ведите минимальное значение');
         finisfNumberOne()
-    } else if ((minParse + 1) === NaN) //проверка ввода нечисленного значения
-        // пробовал (minParse + 1) == 'NaN', typeof minParse == 'string'
+    } else if ((minParse + 1) == NaN) //проверка ввода нечисленного значения
+        // пробовал (minParse + 1) === 'NaN', typeof minParse == 'string'
     {
         alert('Значение не может содержать символы. Пожалуйста, ведите минимальное значение');
         finisfNumberOne()
@@ -29,7 +29,7 @@ function finisfNumberTwoo(minVar) {
     if (!maxVar) {
         alert('Строка не может быть пустой. Пожалуйста, ведите минимальное значение');
         finisfNumberTwoo()
-    } else if (typeof maxParse === NaN) //проверка ввода нечисленного значения
+    } else if (typeof maxParse == NaN) //проверка ввода нечисленного значения
     {
         alert('Значение не может содержать символы. Пожалуйста, ведите минимальное значение');
         finisfNumberTwoo()
