@@ -1,0 +1,19 @@
+nav {
+  display: inline-block;
+  vertical-align: middle;
+  ul li {
+    display: inline-block;
+  }
+}
+#logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.styled-link {
+  background-color: #ccc;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  font-style: italic;
+}
