@@ -38,6 +38,48 @@ $('p:nth-of-type(2)')
         console.log($('#paragraf-id').attr('id'));
         $('#paragraf-id').removeAttr('style')
 
+        $(window).on('resize', function () {
+            console.log('ширина', window.innerWidth);
+            console.log('внешняя ширина', window.outerWidth);
+            console.log('высота', window.innerHeight);
+        });
 
-    })
+        var bannerTop;
+        function setBannerTop() {
+            bannerTop = $('.banner').offset().top;
+        }
+        setBannerTop();
+        $(window).on('resize', function (){
+            setBannerTop();
+            console.log(bannerTop);
+        });
+
+        $(window).on('scroll', function () {
+            console.log($(window).scrollTop());
+            if ($(window).scrollTop() >= bannerTop) {
+                $('.banner').addClass('fixed')
+                $('body').addClass('pt')
+            }else{
+                $('.banner').removeClass('fixed')
+                $('body').removeClass('pt')
+            }
+        });
+
+        $('#accordion > li > a').on('click', function () {
+            $(this)
+                .closest('li')
+                .addClass('active')
+                .find('a')
+                .next()
+                .slideDown()
+                .closest()
+                .siblings()
+                .removeClass('active')
+                .find('a')
+                .next()
+                .slideUp()
+
+        })
+
+    });
 })(jQuery);

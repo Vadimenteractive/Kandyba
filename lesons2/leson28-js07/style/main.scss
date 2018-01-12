@@ -17,3 +17,47 @@ nav {
   float: left;
   font-style: italic;
 }
+.banner {
+  background: #cccccc;
+  font-size: 30px;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  &.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+  }
+}
+.pt {
+  padding-top: 60px;
+}
+#accordion{
+  padding: 0;
+  li{
+    display: block;
+    border: 1px solid #1f273f;
+    margin-bottom: 4px;
+    a{
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      background: #aaa;
+      & ~ *{
+        display: none;
+      }
+    }
+    &.active{
+      a{
+        background: #51d54b;
+        & ~ *{
+          display: block;
+        }
+      }
+
+    }
+  }
+}
