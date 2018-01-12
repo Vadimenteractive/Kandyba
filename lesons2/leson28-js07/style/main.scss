@@ -53,9 +53,9 @@ nav {
     &.active{
       a{
         background: #51d54b;
-        & ~ *{
-          display: block;
-        }
+        //& ~ *{
+        //  display: block;
+        //}
       }
 
     }

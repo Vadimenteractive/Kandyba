@@ -72,12 +72,12 @@ $('p:nth-of-type(2)')
                 .find('a')
                 .next()
                 .slideDown()
-                .closest()
+                .closest('li')
                 .siblings()
                 .removeClass('active')
                 .find('a')
                 .next()
-                .slideUp()
+                .slideUp();
 
         })
 
