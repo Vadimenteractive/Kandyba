@@ -13,8 +13,8 @@ $('#logo').on('click', function (e) {
             //     backgroundColor: '#ccc',
             //     fontSize: '20px'
             // })
-            .toggleClass('styled-link')
-               // .toggle(1500)
+            //.toggleClass('styled-link')
+              .toggle(1500)
 
     console.log(
         $(this)
@@ -25,8 +25,8 @@ $('#logo').on('click', function (e) {
             //     backgroundColor: '#ccc',
             //     fontSize: '20px'
             // })
-            .hasClass('styled-link')
-        // .toggle(1500)
+        //.hasClass('styled-link')
+         .toggle(1500)
     );
 
     }
