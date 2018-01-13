@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+main {
+  height: 100vh;
+  background: grey url("img/BG.jpg") center;
+  background-size: cover;
+  padding-top: 100px;
+  section {
+    margin: 0 auto;
+    width: 600px;
+    padding: 0;
+    .tabs {
+      width: 600px;
+      height: 115px;
+      background: #2b3040;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      box-sizing: border-box;
+      .tab {
+        width: 111px;
+        height: 47px;
+        box-sizing: border-box;
+      }
+      .active{
+        border-bottom: solid 3px wheat;
+        .img{
+          color: white;
+        }
+      }
+    }
+    .content-inner{
+      width: 600px;
+      background: #212534;
+      box-sizing: border-box;
+      .content{
+        height: 430px;
+        color: wheat;
+        display: none;
+        &.act{
+          display: block;}
+      }
+    }
+  }
+}

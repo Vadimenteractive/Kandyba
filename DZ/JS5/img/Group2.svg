@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="108" height="47" viewBox="0 0 108 47">
+  <defs>
+    <style>
+
+      .cls-3 {
+        filter: url(#color-overlay-1);
+        font-size: 16px;
+        opacity: 0.7;
+      }
+
+      .cls-4 {
+        fill: #b7bacd;
+        text-anchor: middle;
+        font-size: 16px;
+        font-family: "Lato";
+      }
+
+      .cls-5 {
+        fill: #bdc3c7;
+        filter: url(#color-overlay-1);
+        opacity: 0.7;
+      }
+    </style>
+
+    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#b7bacd" flood-opacity="1"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="colorOverlay"/>
+    </filter>
+  </defs>
+  <g id="group2svg">
+    <text class="cls-3" x="-20px" y="35px"><tspan x="54px" class="cls-4">RATINGS INFO</tspan></text>
+    <path d="M61.993,11.308 C61.993,13.986 59.868,16.157 57.246,16.157 C55.692,16.157 54.332,15.382 53.472,14.200 C53.472,14.200 53.449,14.217 53.449,14.217 C53.449,14.217 52.500,12.924 52.500,12.924 C52.500,12.924 51.550,14.217 51.550,14.217 C51.550,14.217 51.537,14.207 51.537,14.207 C50.671,15.384 49.306,16.157 47.753,16.157 C45.132,16.157 43.007,13.986 43.007,11.308 C43.007,10.216 43.373,9.218 43.969,8.408 C43.969,8.408 43.956,8.398 43.956,8.398 C43.956,8.398 50.918,-0.008 52.500,-0.008 C54.082,-0.008 61.043,8.398 61.043,8.398 C61.043,8.398 61.030,8.408 61.030,8.408 C61.626,9.218 61.993,10.216 61.993,11.308 ZM50.918,17.773 C50.918,17.773 50.918,16.157 50.918,16.157 C50.918,15.265 51.626,14.540 52.500,14.540 C53.374,14.540 54.082,15.265 54.082,16.157 C54.082,16.157 54.082,17.773 54.082,17.773 C54.956,17.773 55.664,18.497 55.664,19.390 C55.664,20.282 54.956,21.007 54.082,21.007 C54.082,21.007 50.918,21.007 50.918,21.007 C50.044,21.007 49.336,20.282 49.336,19.390 C49.336,18.497 50.044,17.773 50.918,17.773 Z" id="path-1" class="cls-5" fill-rule="evenodd"/>
+  </g>
+</svg>
