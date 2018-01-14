@@ -5,14 +5,14 @@
            nTab = $(this).attr('data-tab');
            $('.tab').removeClass('active')
            $('.content')
-               .slideUp();
+               .hide(500);
            $(this)
                .addClass('active')
                .closest('.tabs')
                .next()
                .children()
                .eq(nTab)
-               .slideDown();
+               .show(500);
            console.log(nTab);
 
 

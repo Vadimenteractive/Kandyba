@@ -1,0 +1,88 @@
+
+@mixin stylingOnHover ($color) {
+  background: $color;
+  &:hover {
+    background: darken($color, 10);
+  }
+}
+.tabs {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 10px;
+      @include stylingOnHover(#aaa);
+      cursor: pointer;
+      &.active {
+        @include stylingOnHover(#cc7e22);
+      }
+    }
+  }
+  & > div {
+    border: 1px solid black;
+    padding: 10px;
+    & > * {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+.ec {
+  span {
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    @include stylingOnHover(#ccc);
+  }
+}
+
+
+
+
+@import "slick";
+.slick {
+  padding: 30px;
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    margin: -10px;
+    &.slick-prev {
+      left: 0;
+  }
+    &.slick-next {
+      right: 0;
+    }
+  }
+  &-dots {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+      button {
+        padding: 0;
+        font-size: 0;
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+      &.slick-active {
+        button {
+          background: red;
+        }
+      }
+    }
+  }
+
+}
+
