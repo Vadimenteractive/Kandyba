@@ -1,6 +1,3 @@
-@import 'slick';
-@import "slick-theme";
-
 body {
   padding: 130px;
   background: gray;
@@ -43,11 +40,11 @@ body {
   }
   section {
     .slide-contein {
-      .container{
-        width: 440px;
-        height: 400px;
-        padding: 0 20px;
-      }
+      //.container{
+      //  width: 440px;
+      //  height: 400px;
+      //  padding: 0 20px;
+      //}
     }
   }
 }

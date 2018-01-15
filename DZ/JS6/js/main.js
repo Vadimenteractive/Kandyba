@@ -4,8 +4,9 @@ $('.slide-contein').slick({
     infinity: true,
     dots: true,
     slidesToShow: 3,
-    centerMode: true,
+    //centerMode: true,
     slidesToScroll: 1,
+    adaptiveHeight: true
     //variableWidth: true
 })
 
