@@ -1,44 +1,55 @@
-;(function ($) {
+;(function($){
     $(function () {
+        // tabs
         $('.tabs > ul > li').on('click', function () {
-            var $this = $(this);
-            var tabIndex = $this.data('id')
-            console.log(tabIndex);
+            var $this = $(this),
+                tabIndex = $this.data('id');
+            // console.log(tabIndex);
             $this
                 .addClass('active')
                 .siblings()
                 .removeClass('active')
-                .end() // возвращаемся на предидущую строку программирования
+                .end() // возвращаемся к $this
                 .parent()
-                .next() // див с контентами табов
-                .find('> [data-tab-id=' + tabIndex + ']')
-                .show(500)
+                .next() // div с контентами табов
+                // .find('> :nth-child(' + tabIndex + ')') // '> :nth-child(1)'
+                .find('> [data-tab-id=' + tabIndex + ']') // '> [data-tab-id=2]'
+                // .children()
+                // .eq(--tabIndex)
+                .addClass('active')
                 .siblings()
-                .hide(500)
+                .removeClass('active')
         });
 
-        // изменяемый контент
-
-        $('.ec span').on('click', function () { // нажимаем на кнопку Save
-            $this.text('Edit');
-            parentEl.prepend($('<p />'));
-            parentEl
-                .find('p')
-                .text(
-                    parentEl.find('textarea').val() // берём отредактированный текст из textarea
-                );
-            parentEl.find('textarea').remove();
+        // editable content
+        $('.ec span').on('click', function () {
+            var $this = $(this),
+                parentEl = $this.parent();
+            if ($this.text() == 'Edit') {
+                $this.text('Save');
+                // $('<textarea />').appendTo('.ec');
+                parentEl.prepend($('<textarea />')); // добавили элемент textarea
+                parentEl
+                    .find('textarea') // находим только что созданный textarea
+                    .val(
+                        parentEl.find('p').text() // берём текущий текст из параграфа
+                    );
+                parentEl.find('p').remove(); // удалили параграф из дом дерева
+            } else { // нажимаем на кнопку Save
+                $this.text('Edit');
+                parentEl.prepend($('<p />'));
+                parentEl
+                    .find('p')
+                    .text(
+                        parentEl.find('textarea').val() // берём отредактированный текст из textarea
+                    );
+                parentEl.find('textarea').remove();
+            }
         });
 
-        //slider
-
+        // slider
         $('.slick').slick({
-            // appendArrows: $(".slick"),
-            // prevArrow: '<div class="arrow-left"><<</div>',
-            // nextArrow: '<div class="arrow-right">>></div>'
-            dots: true,
-
+            dots: true
         });
-
     });
 })(jQuery);

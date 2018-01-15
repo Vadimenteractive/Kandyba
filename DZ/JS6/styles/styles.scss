@@ -1,7 +1,9 @@
 @import 'slick';
+@import "slick-theme";
 
 body {
   padding: 130px;
+  background: gray;
   header{
     max-height: 1000px;
     margin: 0 auto;
