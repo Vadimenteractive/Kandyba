@@ -1,12 +1,15 @@
 ;(function ($) {
     $(function () {
 $('.slide-contein').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
     infinity: true,
-    dots: true,
-    slidesToShow: 3,
+    dots: false,
+    slidesToShow: 2,
     //centerMode: true,
     slidesToScroll: 1,
-    adaptiveHeight: true
+    //adaptiveHeight: true,
+    //centerPadding: '25px'
     //variableWidth: true
 })
 

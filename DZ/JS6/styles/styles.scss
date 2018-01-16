@@ -38,13 +38,48 @@ body {
       text-align: center;
     }
   }
+}
+
   section {
+    position: relative;
     .slide-contein {
-      //.container{
-      //  width: 440px;
-      //  height: 400px;
-      //  padding: 0 20px;
+      .slick-arrow{
+        display: none;
+        width: 0;
+        height: 0;
+        padding: 0;
+        border: none;
+        font-size: 0;
+        &.slick-prev{
+          &:before{
+            position: absolute;
+            top: calc(50% - 48px);
+            left: -100px;
+            content: '';
+            font-size: 0;
+            width: 96px;
+            height: 96px;
+            background: url("../img/left.png");
+            z-index: 10;
+          }
+        }
+        &.slick-next{
+          &:before{
+            position: absolute;
+            top: calc(50% - 48px);
+            right: -100px;
+            content: '';
+            font-size: 0;
+            width: 96px;
+            height: 96px;
+            background: url("../img/right.png");
+            z-index: 10;
+          }
+        }
+      }
+
+      //.slick-active{
+      //  padding-left: 20px;
       //}
     }
   }
-}
