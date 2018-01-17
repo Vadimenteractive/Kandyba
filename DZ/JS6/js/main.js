@@ -13,7 +13,7 @@
             //variableWidth: true
             responsive:[
                 {
-                    breakpoint: 1300,
+                    breakpoint: 1400,
                     settings: {
                         autoplay: false,
                         autoplaySpeed: 2000,
