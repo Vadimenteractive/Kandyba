@@ -6,9 +6,10 @@ body {
     right: 0;
     position: fixed;
     height: 100vh;
-    width: 150px;
+    width: 15px;
     .conteiner{
       padding: 3px;
+      display: none;
       .item{
         background: rgba(56, 102, 203, 0.73);
         border: solid 2px #3c3c3c;
