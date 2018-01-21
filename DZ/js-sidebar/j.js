@@ -1,14 +1,15 @@
-;(function($){
 $('aside').on('mouseenter', function () {
-    function sliU() {
+    function slDown() {
         $('.conteiner')
             .slideDown(500);
-    };
-        $(this)
-            .animate({width: "250px"}, 500);
-    setTimeout(sliU, 600);
+    }
+    $(this)
+        .animate({width: "250px"}, 500);
 
-    })
+    $(this).queue(function () {
+        slDown()
+    });
+
     $('aside').on('mouseleave', function () {
         function sliU() {
             $('aside')
