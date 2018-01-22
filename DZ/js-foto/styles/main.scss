@@ -46,3 +46,17 @@
   transform: scale(0) rotate(90deg);
   opacity: 0;
 }
+#form{
+  margin: auto;
+  padding: 35px 15px;
+  background: #ffffff;
+  max-width: 320px;
+  position: relative;
+  input, textarea {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.hidden {
+  display: none;
+}
