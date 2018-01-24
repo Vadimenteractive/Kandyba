@@ -4,9 +4,11 @@
        // function slDown() {
             $('.conteiner')
                 .delay(600)
+                .stop()
                 .slideDown(500);
         //}
         $(this)
+            .stop()
             .animate({width: "250px"}, 500);
 
         // $(this).queue(function () {
@@ -16,12 +18,16 @@
 
     })
     $('aside').on('mouseleave', function () {
-        function sliU() {
+        //function sliU() {
             $('aside')
+                .delay(600)
+                .stop()
                 .animate({width: "15px"}, 500);
-        }
+        //}
         $('.conteiner')
+            .stop()
             .slideUp(500);
-        setTimeout(sliU, 600);
+
+        //setTimeout(sliU, 600);
     })
 })(jQuery);
