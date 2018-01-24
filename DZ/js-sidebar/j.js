@@ -1,16 +1,17 @@
 
 ;(function($){
     $('aside').on('mouseenter', function () {
-        function slDown() {
+       // function slDown() {
             $('.conteiner')
+                .delay(600)
                 .slideDown(500);
-        }
+        //}
         $(this)
             .animate({width: "250px"}, 500);
 
-        $(this).queue(function () {
-            slDown()
-        })
+        // $(this).queue(function () {
+        //     slDown()
+        // })
         //setTimeout(slDown, 600);
 
     })
