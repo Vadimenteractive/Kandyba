@@ -1,0 +1,40 @@
+@keyframes rec-transform {
+  0% {background: #333333}
+  20% {background: #000}
+  80% {background: darkred}
+  100% {background: #cccccc}
+}
+.test{
+  padding: 50px;
+  margin: 20px auto;
+  width: 600px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  .test-l2 {
+    width: 500px;
+    height: 500px;
+    background: #333333;
+    //transition: transform linear 1s, background linear 1s;
+    animation: rec-transform 2s linear 2s infinite alternate;
+    &:hover{
+      //transform: rotate(-10deg)translate(-10px, -10px);
+      //transform-origin: center center;
+      //transform: rotate(10deg);
+      //transform: scale(.5);
+      //transform: skew(10deg, 10deg);
+      //transition: linear 1s;
+      //background: green;
+
+      animation-name: rec-transform;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+
+      //animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction;
+      animation-play-state: paused;
+    }
+
+  }
+}
