@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<svg width="500" height="100" class="exp1">
+    <circle id="myCircle" r="30" cx="50" cy="50" fill="orange" ></circle>
+
+    <animate xmlns:xlink="http://www.w3.org/1999/xlink"
+             xlink:href="#myCircle"
+             attributeName="cx"
+             from="50"
+             to="450"
+             dur="2s"
+             begin="click"
+    values="50; 490; 350; 450"
+    keyTimes="0; 0.5; 0.8; 1"
+    fill="freeze
+    id="first-animation"
+    <!--repeatCount="indefinite"-->
+    <!--repeatDur="1:30:00"-->
+    >
+    </animate>
+</svg>
+
+<svg width="500" height="350" class="exp1">
+    <circle id="orange-circle" r="30" cx="50" cy="50" fill="orange" />
+    <rect id="blue-rectangle" width="50" height="50" x="25" y="200" fill="#0099cc"></rect>
+
+    <animate
+            xlink:href="#orange-circle"
+            attributeName="cx"
+            from="50"
+            to="450"
+            dur="5s"
+            begin="click"
+            fill="freeze"
+            id="circ-anim"/>
+
+    <animate
+            xlink:href="#blue-rectangle"
+            attributeName="x"
+            from="50"
+            to="425"
+            dur="5s"
+            begin="circ-anim.begin + 1s"
+            fill="freeze"
+            id="rect-anim"/>
+
+</svg>
+
+
+<div class="parent">
+    <div class="child"></div>
+</div>
+<span class="hide">Click me to hide</span>
+<span class="show">Click me to show</span>
+<span class="my-toggle">Click me to my-toggle</span>
+<span class="toggle">Click me to toggle</span>
+
+<span class="slideDown">Click me to slideDown</span>
+<span class="slideUp">Click me to slideUp</span>
+<span class="slideToggle">Click me to slideToggle</span>
+
+<span class="fadeOut">Click me to fadeOut</span>
+<span class="fadeIn">Click me to fadeIn</span>
+<span class="fadeTo">Click me to fadeTo</span>
+<span class="fadeToggle">Click me to fadeToggle</span>
+
+<span class="animate">Click me to animate</span>
+
+<script src="scripts/jquery-3.2.1.min.js" defer></script>
+<script src="scripts/scripts.js" defer></script>
+</body>
+</html>

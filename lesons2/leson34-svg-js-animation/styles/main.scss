@@ -1,0 +1,27 @@
+.exp1 {
+  border: 3px solid black;
+}
+svg {
+  vertical-align: top;
+  display: block;
+  margin: 10px;
+}
+.parent {
+  height: 600px;
+  width: 600px;
+  margin: 0 auto;
+  border:1px solid black;
+  padding: 50px;
+  box-sizing: border-box;
+  .child{
+    height: 100%;
+    background: #333333;
+  }
+}
+span{
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  border: solid 1px black;
+  margin: 3px;
+}
