@@ -3,8 +3,8 @@
     $('aside').on('mouseenter', function () {
        // function slDown() {
             $('.conteiner')
-                .delay(600)
                 .stop()
+                .delay(600)
                 .slideDown(500);
         //}
         $(this)
@@ -20,8 +20,8 @@
     $('aside').on('mouseleave', function () {
         //function sliU() {
             $('aside')
-                .delay(600)
                 .stop()
+                .delay(600)
                 .animate({width: "15px"}, 500);
         //}
         $('.conteiner')
