@@ -2,14 +2,16 @@
 ;(function($){
     $('aside').on('mouseenter', function () {
        // function slDown() {
-            $('.conteiner')
-                .stop()
-                .delay(600)
-                .slideDown(500);
+
         //}
         $(this)
+            .removeClass('sidebar-tern')
             .stop()
-            .animate({width: "250px"}, 500);
+            .animate({width: "250px"}, 500, 'swing', function () {
+                $('.conteiner')
+                    .stop()
+                    .slideDown(500);
+            });
 
         // $(this).queue(function () {
         //     slDown()
@@ -18,15 +20,18 @@
 
     })
     $('aside').on('mouseleave', function () {
+        $(this)
+            .addClass('sidebar-tern')
         //function sliU() {
-            $('aside')
-                .stop()
-                .delay(600)
-                .animate({width: "15px"}, 500);
+
         //}
         $('.conteiner')
             .stop()
-            .slideUp(500);
+            .slideUp(500, function () {
+                $('aside')
+                    .stop()
+                    .animate({width: "15px"}, 500);
+            });
 
         //setTimeout(sliU, 600);
     })
