@@ -33,6 +33,13 @@ body {
         font-size: 25px;
         padding: 5px;
         cursor: pointer;
+        perspective: 600px;
+        transform-style: preserve-3d;
+        transition: transform .8s ease;
+        &:hover {
+          transform: rotateY(360deg);
+          transition: transform .8s ease;
+        }
       }
     }
   }
