@@ -30,7 +30,7 @@
             .slideUp(500, function () {
                 $('aside')
                     .stop()
-                    .animate({width: "15px"}, 500);
+                    .animate({width: "25px"}, 500);
             });
 
         //setTimeout(sliU, 600);
