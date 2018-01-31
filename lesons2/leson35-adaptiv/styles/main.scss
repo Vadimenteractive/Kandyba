@@ -1,0 +1,91 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.color-changing {
+  width: 80%;
+  height: 80%;
+  background: #333333;
+  margin: 50px auto 0;
+  color: white;
+  @media all and (max-width: 900px) {
+    background: red;
+  }
+  @media all and (max-width: 800px) {
+    background: green;
+  }
+}
+
+.other-element {
+  //some styles
+}
+
+//@media all and (min-width: 800px) and (max-width: 900px) {
+//  .color-changing {
+//    background: #555555;
+//  }
+//}
+
+//в случае отслеживания минимальныхразмеров брекпоинты надо распологать в порядке возрастания, а в случае с отслеживанием максимальных размеров брекпоинты нужно располагать в порядке убывания
+
+
+//@media all and (max-width: 900px) {
+//  .color-changing {
+//    background: red;
+//  }
+//  .other-element {
+//    //some styles
+//  }
+//}
+//@media all and (max-width: 800px) {
+//  .color-changing {
+//    background: green;
+//  }
+//}
+//
+//@media all and (max-width: 700px) {
+//  .color-changing {
+//    background: blue;
+//  }}
+.row{
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.col-10-1{
+  width: 10%;
+  padding: 1%;
+  box-sizing: border-box;
+  float: left;
+  @media all and (max-width: 1024px){
+    width: 20%;
+  }
+  @media all and (max-width: 767px){
+    width: 25%;
+  }
+  @media all and (max-width: 639px){
+    width: 33.33%;
+  }
+}
+.col-inner {
+  min-height: 50px;
+  background: #333333;
+}
+img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 100px;
+}
+body {
+  font-size: 14px;
+  @media all and (max-width: 1024px){
+    font-size: 12px;
+  }
+  *{
+    @media all and (max-width: 1024px){
+      font-size: 1em;
+    }
+  }
+}
