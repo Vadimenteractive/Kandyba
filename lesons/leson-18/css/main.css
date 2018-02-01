@@ -6,11 +6,12 @@ body {
 }
 
 .content-inner {
-    max-width: 1170px; /*чтобы небыло полосы прокрутки при меньшем экране*/
+    max-width: 1810px; /*чтобы небыло полосы прокрутки при меньшем экране*/
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 20px;
 }
+
 
 header {
     height: 56px;
@@ -34,7 +35,7 @@ header ul {
 header ul li {
     display: inline-block;
     float: left; /*убрали пробел между ли*/
-    margin-right: 35px;
+    margin-left: 35px;
     box-sizing: border-box;
     border-top: 2px solid transparent;
 }
@@ -62,7 +63,7 @@ a {
 }
 
 .main-section {
-    background: #f9f8fb url("../img/img1.jpg") no-repeat right center/auto;
+    background: #f9f8fb url("../img/img1.jpg") no-repeat center/auto;
 }
 
 .main-section .section-text {
@@ -166,6 +167,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row-reverse;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -306,31 +308,31 @@ h2 {
 
 .c1 {
     background: url("../img/c1.jpg") center no-repeat;
-    background-size: auto;
+    background-size: cover;
     height: 550px;
 }
 
 .c2 {
     background: url("../img/c2.jpg") center no-repeat;
-    background-size: auto;
+    background-size: cover;
     height: 260px;
 }
 
 .c3 {
     background: url("../img/c3.jpg") center no-repeat;
-    background-size: auto;
+    background-size: cover;
     height: 260px;
 }
 
 .c4 {
     background: url("../img/c4.jpg") center no-repeat;
-    background-size: auto;
+    background-size: cover;
     height: 400px;
 }
 
 .c5 {
     background: url("../img/c5.jpg") center no-repeat;
-    background-size: auto;
+    background-size: cover;
     height: 400px;
 }
 
@@ -583,6 +585,7 @@ form * {
     list-style-type: none;
     margin-bottom: 25px;
 }
+
 .cc1{font: 700 17px 'Raleway', sans-serif;}
 .cc2{font: 300 20px 'Raleway', sans-serif;}
 footer{background: #262626;}
@@ -603,4 +606,106 @@ footer .content-inner{
 .f4{
     font: 700 16px 'Raleway', sans-serif;
     color: #ff2b58;
+}
+@media all and (max-width: 1440px) {
+    .main-section {
+        background: #f9f8fb url("../img/img1.jpg") no-repeat center/auto; }
+    .content-inner {
+        max-width: 1350px;}
+}
+
+@media all and (max-width: 1280px) {
+    .main-section {
+        background: #f9f8fb url("../img/img1.jpg") no-repeat right -100px center/auto; }
+    .content-inner {
+        max-width: 1170px; }
+    #section-about {
+        background: #00b9b9 url("../img/img1.png") no-repeat 0 50%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    #our-services .content-inner {
+        flex-direction: column;
+    }
+    #section-about {
+        background: #00b9b9 url("../img/img1.png") no-repeat -237px 50%;
+    }
+    .col-4, .col-6, .col-8, .col-12 {
+        width: 100%;
+    }
+    #gallery .row1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #gallery .row1 .col-4 {
+        max-width: 100%;
+    }
+    #gallery .row1 .col-4 .row{
+
+        display: flex;
+        justify-content: space-between;
+    }
+    #subscribe {
+        background: url("../img/img3.jpg") no-repeat right -130px center/auto;
+    }
+    #text {
+        margin-bottom: 20px;
+    }
+    #contact .content-inner form {
+        margin-right: 50px;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .main-section {
+        background: #f9f8fb url("../img/img1.jpg") no-repeat right -280px center/auto;
+    }
+    .main-section .section-text {
+        text-shadow: 0px 0px 8px white;
+    }
+    .content-inner {
+        max-width: 690px;
+        padding: 0 10px;
+    }
+    #section-about .content-inner {
+        align-items: center;
+    }
+    #section-about {
+        background: #00b9b9;
+    }
+    #subscribe {
+        background: url("../img/img3.jpg") no-repeat 100% 50%/auto;
+        text-shadow: 0px 0px 8px white;
+    }
+    #subscribe p {
+        background: rgba(255, 255, 255, 0.6);
+    }
+    #blog .content-inner .secton-i {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #blog .content-inner .secton-i a{
+        margin: 10px;
+    }
+    #contact .content-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact .content-inner .section-text{
+        order: 1;
+    }
+    #contact .content-inner form {
+        order: 3;
+        margin-right: 0;
+    }
+    #contact .content-inner .contact {
+        order: 2;
+    }
+    header ul li {
+        margin-left: 20px;
+    }
 }
