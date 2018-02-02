@@ -3,6 +3,7 @@
 
 body {
     margin: 0;
+    font-size: 16px;
 }
 
 .content-inner {
@@ -42,7 +43,7 @@ header ul li {
 
 header ul li a {
     color: black;
-    font: 700 16px 'Raleway', sans-serif;
+    font: 700 1em 'Raleway', sans-serif;
     text-transform: uppercase;
 }
 
@@ -83,7 +84,7 @@ a {
     box-sizing: border-box;
     position: relative;
 }
-h3{font: 900 60px 'Raleway', sans-serif;
+h3{font: 900 3.8em 'Raleway', sans-serif;
     margin-bottom: 35px;
     }
 .main-section .p-white{
@@ -135,12 +136,12 @@ h3{font: 900 60px 'Raleway', sans-serif;
 }
 
 h2 {
-    font: bold 90px 'Raleway', sans-serif;
+    font: bold 5.6em 'Raleway', sans-serif;
     margin: 0;
 }
 
 .p-white {
-    font: 300 17px 'Raleway', sans-serif;
+    font: 300 1.1em 'Raleway', sans-serif;
     margin: 0;
 }
 
@@ -185,7 +186,7 @@ h2 {
     min-height: 100px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    font: bold 20px 'Raleway', sans-serif;
+    font: bold 1.3em 'Raleway', sans-serif;
     text-align: center;
     color: black;
     padding-right: 130px;
@@ -340,7 +341,7 @@ h2 {
     display: block;
     margin: 0 auto;
     text-transform: uppercase;
-    font: 300 20px 'Raleway', sans-serif;
+    font: 300 1.3em 'Raleway', sans-serif;
     text-align: center;
     background: #5585a2;
     width: 200px;
