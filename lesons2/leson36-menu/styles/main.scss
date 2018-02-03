@@ -2,8 +2,15 @@
   ul {
     float: left;
     padding: 0;
+    overflow: hidden;
     li {
       display: inline-block;
+      position: relative;
+      transition: all 2s linear;
+      &[data-class="open-li"]{
+        left: 0;
+        transition: all 2s linear;
+      }
       a {
         text-decoration: none;
         padding: 10px;
@@ -35,6 +42,7 @@
       width: calc(100% - 40px);
       li {
         display: block;
+        left: -100%;
         a {
           display: block;
           margin: 10px 0;
