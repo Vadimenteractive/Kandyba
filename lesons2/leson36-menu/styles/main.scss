@@ -1,4 +1,11 @@
+body {
+  background: burlywood;
+
+}
 #main-menu {
+  img{
+    float: left;
+  }
   ul {
     float: left;
     padding: 0;
@@ -6,10 +13,10 @@
     li {
       display: inline-block;
       position: relative;
-      transition: all 2s linear;
+      transition: all .8s linear;
       &[data-class="open-li"]{
         left: 0;
-        transition: all 2s linear;
+        transition: all .8s linear;
       }
       a {
         text-decoration: none;
@@ -39,7 +46,7 @@
     }
     @media all and (max-width: 767px) {
       display: none;
-      width: calc(100% - 40px);
+      width: calc(100% - 110px);
       li {
         display: block;
         left: -100%;
@@ -51,6 +58,9 @@
     }
     @media all and (min-width: 768px) {
       display: block !important;
+      li {
+        left: 0 !important;
+      }
     }
   }
   .hamburger {
