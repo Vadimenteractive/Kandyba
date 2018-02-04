@@ -41,10 +41,12 @@ var delay = 0
                 //while (i <5) {
                 function anim(n) {
                     if (i<5) {
+                        setTimeout(function () {
 
-                        $firstLi.eq(i++)
-                            .delay(n)
-                            .animate({'left': '0'}, 500, anim(delay));
+                            $firstLi.eq(i++)
+                            // .delay(n)
+                                .animate({'left': '0'}, 500, anim(delay));
+                        }, 500);
                         delay+=500;
                     }
 
