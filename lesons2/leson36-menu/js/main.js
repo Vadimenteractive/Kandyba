@@ -24,8 +24,8 @@
 
        //почему меню скрывается раньше завершения анимации
 
-                            .delay(1500)
-                            .hide();
+                            .delay(0)
+                            .hide(600);
                     });
             } else {
 
@@ -36,34 +36,20 @@
                     .show();
 
         //почему нельзя сделать всё по очереди
-
+anim();
+var delay = 0
                 //while (i <5) {
-                    $firstLi.eq(i++)
-                        .delay(200)
-                        .animate({'left': '0'}, 500,
-                            function () {
-                                $firstLi.eq(i++)
-                                    .delay(200)
-                                    .animate({'left': '0'}, 500,
-                                        function () {
-                                            $firstLi.eq(i++)
-                                                .delay(200)
-                                                .animate({'left': '0'}, 500,
-                                                    function () {
-                                                        $firstLi.eq(i++)
-                                                            .delay(200)
-                                                            .animate({'left': '0'}, 500,
-                                                                function () {
-                                                                    $firstLi.eq(i++)
-                                                                        .delay(200)
-                                                                        .animate({'left': '0'}, 500,
-                                                                            function () {
+                function anim(n) {
+                    if (i<5) {
 
-                                                                            });
-                                                                });
-                                                    });
-                                        });
-                            });
+                        $firstLi.eq(i++)
+                            .delay(n)
+                            .animate({'left': '0'}, 500, anim(delay));
+                        delay+=500;
+                    }
+
+                }
+
                // }
             }
 
@@ -103,7 +89,7 @@
 //                 .eq(i)
 //                 .animate({'left': '0'}, 800)
 //                 //.attr('data-class', 'open-li')
-//                 .delay(500);
+//                 .delay(200);
 //         }
 //     });
 
