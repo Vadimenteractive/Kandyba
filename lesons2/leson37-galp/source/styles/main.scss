@@ -1,0 +1,26 @@
+main {
+  p {
+    font-size: 20px;
+    span {
+      color: red;
+    }
+  }
+  div {
+    background: #cccccc;
+  }
+  ul {
+    margin: 0;
+    li {
+      display: inline-block;
+      @media all and (max-width: 1024px) {
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+          color: green;
+        }
+      }
+    }
+  }
+}
