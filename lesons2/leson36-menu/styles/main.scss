@@ -13,10 +13,10 @@ body {
     li {
       display: inline-block;
       position: relative;
-      //transition: all .8s linear;
+      transition: all .6s linear;
       &[data-class="open-li"]{
         left: 0;
-        //transition: all .8s linear;
+        transition: all .6s linear;
       }
       a {
         text-decoration: none;
@@ -86,7 +86,7 @@ body {
       height: 4px;
       width: 100%;
       background: #333333;
-      //transition: all .2s linear;
+      transition: all .2s linear;
 
     }
     &:before {

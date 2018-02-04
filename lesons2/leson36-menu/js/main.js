@@ -42,17 +42,20 @@ var delay = 0
                 function anim(n) {
                     if (i<5) {
                         setTimeout(function () {
-
-                            $firstLi.eq(i++)
-                            // .delay(n)
-                                .animate({'left': '0'}, 500, anim(delay));
-                        }, 500);
+            $ulMenu
+                .children('li')
+                .eq(i++)
+                .attr('data-class', 'open-li');
+                            // $firstLi.eq(i++)
+                            //     .animate({'left': '0'}, 500, anim(delay));
+                            anim(n);}, 500);
                         delay+=500;
+
                     }
 
                 }
 
-               // }
+
             }
 
 
