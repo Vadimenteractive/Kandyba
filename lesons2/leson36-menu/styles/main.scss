@@ -13,10 +13,10 @@ body {
     li {
       display: inline-block;
       position: relative;
-      transition: all .6s linear;
+      transition: all .3s ease;
       &[data-class="open-li"]{
         left: 0;
-        transition: all .6s linear;
+        transition: all .3s ease;
       }
       a {
         text-decoration: none;
