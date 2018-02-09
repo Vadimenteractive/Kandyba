@@ -1,0 +1,21 @@
+{
+  "name": "lesson37-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglifycss": "^1.0.9"
+  }
+}

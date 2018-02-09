@@ -1,0 +1,1 @@
+*{margin:0;padding:0}main p{font-size:20px}main p span{color:red}main div{background:#bbb;display:-webkit-box;display:-ms-flexbox;display:flex}main ul{margin:0}main ul li{display:inline-block;border-radius:5px}@media all and (max-width:1024px){main ul li{display:block}}main ul li a{text-decoration:none}main ul li a:hover{color:green}
