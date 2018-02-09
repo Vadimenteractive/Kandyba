@@ -13,7 +13,7 @@ body {
   background: #f3f3f3;
   .grid {
     width: 90vw;
-    height: 75%; /* inherit height from body */
+    height: 175%; /* inherit height from body */
   }
 
   /* clear fix */
@@ -40,3 +40,4 @@ body {
   .grid-item--height8 { height: 357px; }
   .grid-item--height9 { height: 255px; }
 }
+
