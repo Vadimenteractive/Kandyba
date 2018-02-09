@@ -13,7 +13,8 @@ body {
   background: #f3f3f3;
   .grid {
     width: 90vw;
-    height: 175%; /* inherit height from body */
+
+    height: 965px; /* inherit height from body */
   }
 
   /* clear fix */
@@ -27,17 +28,17 @@ body {
 
   .grid-item {
     float: left;
-    width: 270px;
-    height: 361px;
-    border: 2px solid #f3f3f3;
+    width: 280px;
+    height: 371px;
+    border: 5px solid #f3f3f3;
   }
-  .grid-item--height2 { height: 229px; }
-  .grid-item--height3 { height: 344px; }
-  .grid-item--height4 { height: 374px; }
-  .grid-item--height5 { height: 269px; }
-  .grid-item--height6 { height: 301px; }
-  .grid-item--height7 { height: 209px; }
-  .grid-item--height8 { height: 357px; }
-  .grid-item--height9 { height: 255px; }
+  .grid-item--height2 { height: 219px; }
+  .grid-item--height3 { height: 239px; }
+  .grid-item--height4 { height: 354px; }
+  .grid-item--height5 { height: 267px; }
+  .grid-item--height6 { height: 311px; }
+  .grid-item--height7 { height: 384px; }
+  .grid-item--height8 { height: 265px; }
+  .grid-item--height9 { height: 279px; }
 }
 
