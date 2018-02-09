@@ -12,9 +12,9 @@ body {
   height: 100vh;
   background: #f3f3f3;
   .grid {
-    width: 90vw;
+    max-width: 1130px;
 
-    height: 965px; /* inherit height from body */
+    //height: 965px; /* inherit height from body */
   }
 
   /* clear fix */

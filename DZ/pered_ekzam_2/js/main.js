@@ -1,4 +1,4 @@
 $('.grid').isotope({
-    layoutMode: 'fitColumns',
+    layoutMode: 'packery',
     itemSelector: '.grid-item'
 });
