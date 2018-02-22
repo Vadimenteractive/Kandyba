@@ -22,7 +22,7 @@
     $('.button1').magnificPopup();
     $('#form').submit(function () {
         $.ajax({
-            typw : post,
+            type : post,
             url : 'mail.php',
             data : $(this).serialize()
         }).done(function () {
